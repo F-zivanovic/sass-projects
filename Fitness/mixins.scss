@@ -1,0 +1,35 @@
+// MIXINS FILE
+
+@mixin flex($justify, $align, $direction, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin btn($bg, $borders, $color, $color1, $bg1) {
+    padding: 15px 30px;
+    background: $bg;
+    border: $borders;
+    color: $color;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+
+    &:hover {
+        cursor: pointer;
+        background: $bg1;
+        color: $color;
+        transition: $transition;
+    }
+}
+
+@mixin  img ($height, $width) {
+    height: $height;
+    width: $width;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
