@@ -1,21 +1,29 @@
-// EXTERNAL FILES
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'animations.scss';
 
-// GOOGLE FONTS
+/*---------------------------------
+    GOOGLE FONTS
+-----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 
-// UNIVERSAL STYLES
+/*---------------------------------
+    UNIVERSAL STYLES
+-----------------------------------*/
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-// BASIC STYLES
+/*---------------------------------
+    BASIC STYLES
+-----------------------------------*/
 body{
     font-family: $text;
     line-height: 1.5;
@@ -28,6 +36,10 @@ h1,h2,h3,h4,h5,h6{
 
 .container{
     width: 90%;
+    margin: auto;
+}
+.container1{
+    width: 80%;
     margin: auto;
 }
 
@@ -134,6 +146,67 @@ header{
                         transition: $transition;
                     }
                 }
+            }
+        }
+    }
+}
+
+/*---------------------------------
+    WORKS
+-----------------------------------*/
+.works{
+    padding: $padding;
+    background-color: $dark;
+    color: $white;
+
+    .container1{
+        @include flex(space-evenly, center, row, wrap);
+
+        article{
+            &:first-child{
+                flex: 0 0 45%;
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+                h3{
+                    font-size: 2rem;
+                }
+                span{
+                    display: block;
+                    padding: 10px 0px;
+                    font-size: 1.1rem;
+                }
+                p{
+                    padding: 20px 0px;
+                    color: $gray;
+                }
+                button{
+                    @include btn ($primary, none, $white);
+                    &:hover{
+                        background-color: $white;
+                        color: $primary;
+                        transition: $transition;
+                    }
+                }
+                
+            }
+
+            &:last-child{
+                flex: 0 0 45%;
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                    margin-top: 50px;
+                }
+
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    padding: 10px 0px;
+                    font-weight: 700;
+                }
+
+
             }
         }
     }

@@ -1,10 +1,22 @@
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
+/*---------------------------------
+    GOOGLE FONTS
+-----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+/*---------------------------------
+    UNIVERSAL STYLES
+-----------------------------------*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
 
+/*---------------------------------
+    BASIC STYLES
+-----------------------------------*/
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -15,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: 90%;
+  margin: auto; }
+
+.container1 {
+  width: 80%;
   margin: auto; }
 
 ul {
@@ -116,5 +132,56 @@ header {
       header hgroup .buttons button:last-child:hover {
         color: #ffffff;
         transition: 0.4 ease; }
+
+/*---------------------------------
+    WORKS
+-----------------------------------*/
+.works {
+  padding: 50px 0px;
+  background-color: #171819;
+  color: #ffffff; }
+  .works .container1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .works .container1 article:first-child {
+      flex: 0 0 45%; }
+      @media (max-width: 768px) {
+        .works .container1 article:first-child {
+          flex: 0 0 100%; } }
+      .works .container1 article:first-child h3 {
+        font-size: 2rem; }
+      .works .container1 article:first-child span {
+        display: block;
+        padding: 10px 0px;
+        font-size: 1.1rem; }
+      .works .container1 article:first-child p {
+        padding: 20px 0px;
+        color: #909090; }
+      .works .container1 article:first-child button {
+        padding: 15px 30px;
+        background: #f13a11;
+        border: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        border-radius: 3px; }
+        .works .container1 article:first-child button:hover {
+          background-color: #ffffff;
+          color: #f13a11;
+          transition: 0.4 ease; }
+    .works .container1 article:last-child {
+      flex: 0 0 45%; }
+      @media (max-width: 768px) {
+        .works .container1 article:last-child {
+          flex: 0 0 100%;
+          margin-top: 50px; } }
+      .works .container1 article:last-child h3 {
+        font-size: 2rem; }
+      .works .container1 article:last-child p {
+        padding: 10px 0px;
+        font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
