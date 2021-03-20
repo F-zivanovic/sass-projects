@@ -64,4 +64,57 @@ nav {
           nav .container ul li a:hover {
             color: #f13a11; }
 
+/*---------------------------------
+    HEADER
+-----------------------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-bg.jpg);
+  height: 89vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  header hgroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70vh;
+    color: #ffffff;
+    text-align: center; }
+    header hgroup span {
+      color: #909090;
+      font-size: 1.3rem; }
+    header hgroup h1 {
+      font-size: 3rem;
+      padding: 10px 0px; }
+      @media (max-width: 768px) {
+        header hgroup h1 {
+          font-size: 2rem; } }
+    header hgroup .buttons button:first-child {
+      padding: 15px 30px;
+      background: #171819;
+      border: none;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 1rem;
+      border-radius: 3px; }
+      header hgroup .buttons button:first-child:hover {
+        transition: 0.4 ease;
+        color: #f13a11;
+        background-color: #171819; }
+    header hgroup .buttons button:last-child {
+      padding: 15px 30px;
+      background: none;
+      border: 1px solid #f13a11;
+      color: #f13a11;
+      text-transform: uppercase;
+      font-size: 1rem;
+      border-radius: 3px; }
+      header hgroup .buttons button:last-child:hover {
+        color: #ffffff;
+        transition: 0.4 ease; }
+
 /*# sourceMappingURL=style.css.map */
