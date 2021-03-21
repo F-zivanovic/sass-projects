@@ -72,6 +72,9 @@ nav {
       flex-wrap: wrap; }
       nav .container ul li {
         padding: 0px 15px; }
+        @media (max-width: 768px) {
+          nav .container ul li {
+            padding: 0px 10px; } }
         nav .container ul li a {
           color: #ffffff;
           font-size: 1rem;
@@ -183,5 +186,49 @@ header {
       .works .container1 article:last-child p {
         padding: 10px 0px;
         font-weight: 700; }
+
+/*---------------------------------
+    ABOUT
+-----------------------------------*/
+.about {
+  padding: 50px 0px;
+  background-color: #f9f9f9; }
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .about .container article {
+      flex: 0 0 45%; }
+      @media (max-width: 768px) {
+        .about .container article {
+          flex: 0 0 100%; } }
+      .about .container article h3 {
+        font-size: 2rem; }
+      .about .container article p {
+        padding-top: 20px; }
+      .about .container article:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap; }
+      .about .container article .card {
+        width: 45%;
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7); }
+        @media (max-width: 768px) {
+          .about .container article .card {
+            margin-top: 20px; } }
+        .about .container article .card:hover {
+          transform: scale(1.2);
+          transition-duration: 1.5s;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7); }
+        .about .container article .card h4 {
+          font-size: 1.6rem; }
+        .about .container article .card p {
+          padding-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
