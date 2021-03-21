@@ -267,3 +267,60 @@ header{
         }
     }
 }
+
+/*---------------------------------
+    TRAINING
+-----------------------------------*/
+.training{
+    padding: $padding;
+    text-align: center;
+    
+    span{
+        font-size: 1.5rem;
+        color: $gray;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .row{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            flex: 0 0 30%;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            .card{
+                margin-top: 40px;
+                width: 100%;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+                &:hover{
+                    transform: scale(1.1);
+                    transition-duration: 1.5s;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+                }
+
+                h4{
+                    font-size: 1.7rem;
+                }
+
+                p{
+                    padding: 15px 0px;
+                }
+                button{
+                    @include btn($primary, none, $white);
+                    border-radius: 20px 0px 20px 0px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        border-radius: 0px 20px 0px 20px;
+                        transition: $transition;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

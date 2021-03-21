@@ -231,4 +231,53 @@ header {
         .about .container article .card p {
           padding-bottom: 20px; }
 
+/*---------------------------------
+    TRAINING
+-----------------------------------*/
+.training {
+  padding: 50px 0px;
+  text-align: center; }
+  .training span {
+    font-size: 1.5rem;
+    color: #909090; }
+  .training h3 {
+    font-size: 2rem; }
+  .training .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .training .row article {
+      flex: 0 0 30%; }
+      @media (max-width: 768px) {
+        .training .row article {
+          flex: 0 0 100%; } }
+      .training .row article .card {
+        margin-top: 40px;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); }
+        .training .row article .card:hover {
+          transform: scale(1.1);
+          transition-duration: 1.5s;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7); }
+        .training .row article .card h4 {
+          font-size: 1.7rem; }
+        .training .row article .card p {
+          padding: 15px 0px; }
+        .training .row article .card button {
+          padding: 15px 30px;
+          background: #f13a11;
+          border: none;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 1rem;
+          border-radius: 3px;
+          border-radius: 20px 0px 20px 0px;
+          margin-bottom: 10px; }
+          .training .row article .card button:hover {
+            border-radius: 0px 20px 0px 20px;
+            transition: 0.4 ease;
+            cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */
