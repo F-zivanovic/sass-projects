@@ -27,3 +27,12 @@
     background-repeat: no-repeat;
     
 }
+
+@mixin input  {
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px;
+    color: $dark;
+    font-size: 1rem;
+}
