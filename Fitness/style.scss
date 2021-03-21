@@ -383,3 +383,24 @@ header{
         }
     }
 }
+
+/*---------------------------------
+    FOOTER
+-----------------------------------*/
+footer{
+    padding: $padding;
+    border-top: 1px solid $gray;
+
+    .container
+    {
+        @include flex(space-between, center, row, wrap);
+      
+        article{
+            flex: 0 0 50%;
+            i{
+                color: $primary;
+                padding-left: 10px;
+            }
+        }
+    }
+}

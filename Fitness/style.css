@@ -335,4 +335,22 @@ header {
       .contact .container article p {
         padding: 20px 0px; }
 
+/*---------------------------------
+    FOOTER
+-----------------------------------*/
+footer {
+  padding: 50px 0px;
+  border-top: 1px solid #909090; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    footer .container article {
+      flex: 0 0 50%; }
+      footer .container article i {
+        color: #f13a11;
+        padding-left: 10px; }
+
 /*# sourceMappingURL=style.css.map */
