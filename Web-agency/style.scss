@@ -232,6 +232,12 @@ header
                         margin-top: 30px;
                         text-align: center;
                     }
+
+                    &:hover{
+                        transform: skewX(15deg);
+                        transition-duration: 1.4s;
+                        color: $lightBlue;
+                    }
                 }
             }
 
@@ -386,8 +392,10 @@ footer
         color: $darkBlue;
         padding-left: 20px;
         &:hover{
-            color: $lightBlue;
+            color: $orange;
             transition: $transition;
+            transform: rotate(360deg);
+            transition-duration: 1.4s;
         }
     }
     p{

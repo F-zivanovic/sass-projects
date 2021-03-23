@@ -195,6 +195,10 @@ header {
             .services .container article:first-child i {
               margin-top: 30px;
               text-align: center; } }
+          .services .container article:first-child i:hover {
+            transform: skewX(15deg);
+            transition-duration: 1.4s;
+            color: #459ad3; }
       .services .container article h1 {
         font-size: 3rem; }
       .services .container article p {
@@ -387,8 +391,10 @@ footer {
     color: #1d527c;
     padding-left: 20px; }
     footer i:hover {
-      color: #459ad3;
-      transition: 0.3s ease; }
+      color: #fd7f45;
+      transition: 0.3s ease;
+      transform: rotate(360deg);
+      transition-duration: 1.4s; }
   footer p {
     color: #fff;
     font-size: 1.4rem;
