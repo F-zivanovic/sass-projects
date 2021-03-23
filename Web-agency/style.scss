@@ -1,18 +1,17 @@
 // GOOGLE FONTS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap');
 
-// VARIABLES
-$darkBlue: #1d527c;  /* rgb(29, 82, 124) */
-$lightBlue: #459ad3; /* rgb(69, 154, 211) */
-$orange: #fd7f45;      /* rgb(253, 127, 69) */
-$darkGray: #3c3b3c;
-$lightGray: lightgray;
-$white: #fff;
-$transition: .3s ease;
-$padding: 100px 40px;
-$font:16px;
 
-// DEFAULT STYLES
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+/*---------------------------------
+    DAFAULT STYLES
+-----------------------------------*/
 *
 {
     box-sizing: border-box;
@@ -33,11 +32,9 @@ h1,h2,h3,h4,h5,h6
 
 .container
 {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    @media(max-width:768px){
-        width: 90%;
-    }
+ 
 }
 ul
 {
@@ -61,67 +58,22 @@ a
     margin: 10px 0;
 }
 
-.images
-{
-    background-image: url(img/works1.jpg);
-    background-position: center;
-     background-size: cover;
-     height: 500px;
-    flex: 0 0 30%;
-     margin-top: 20px;
-     border-bottom: 15px solid $lightBlue;
-     position: relative;
-     @media(max-width:768px)
-     {
-      flex: 0 0 100%;
-      }
-}
 
-// MIXINS
-@mixin btn {
-    background: none;
-    padding: 15px 30px;
-    border: 2px solid $white;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    color: $white;
-    &:hover{
-        transition: $transition;
-        cursor: pointer;
-        background-color: $white;
-        color: $darkGray;
-    }
-}
-
-@mixin btn1 {
-    background-color: $darkBlue;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 10px 20px 10px 20px;
-    color: $white;
-    text-transform: uppercase;
-    margin-top: 20px;
-    border: none;
-    &:hover{
-        transition: $transition;
-        background-color: $orange;
-        border-radius: 20px 10px 20px 10px;
-    }
-}
-
-// NAV
+/*---------------------------------
+   NAV
+-----------------------------------*/
 nav
 {
     background:linear-gradient(to right, $orange, $darkBlue);
     padding-top: 10px;
     padding: 5px 0;
+
     .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(space-between, center, row, wrap);
         @media(max-width:768px){
             flex-direction: column;
         }
+
         .logo{
             color: $white;
             text-transform: uppercase;
@@ -154,22 +106,22 @@ nav
 
 }
 
-// HEADER
+/*---------------------------------
+   HEADER
+-----------------------------------*/
 header
 {
     background-image:linear-gradient( rgba(29, 82, 124, .7), rgba(253, 127, 69, .7),), url(img/baloon.jpg);
     background-size: cover;
     background-position: center;
     height: 94vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center, column, wrap);
     color: $white;
     text-align: center;
     @media(max-width:768px){
         height: 80vh;
     }
+
     h2{
         font-size: 3rem;
         font-weight: 300;
@@ -178,54 +130,64 @@ header
         @media(max-width:768px){
             font-size: 1.9rem;
         }
+
         span{
             font-style: italic;
             font-weight: 700;
         }
     }
+
     p{
         padding: 20px 0;
         font-size: 1.2rem;
     }
     button{
-        @include btn();
+
+        @include btn(none, 2px solid $white, $white);
+        &:hover{
+            background-color: $white;
+            color: $darkBlue;
+        }
     }
    
 }
 
-// ABOUT
+/*---------------------------------
+   ABOUT
+-----------------------------------*/
 .about
 {
+    @include flex(center, center, row, wrap);
     padding: $padding;
-    display: flex;
-    flex-wrap: wrap;
     @media(max-width:768px){
        padding: 50px 0px;
     }
+
     article{
         flex: 1;
         @media(max-width:768px){
             flex: 0 0 100%;
             margin-top: 30px;
         }  
+
         &:last-child{
             img{
                 width: 100%;
                 height: 300px;
             }
         }
+
         &:first-child{  
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
+            @include flex(center, start, column, wrap);
             padding-right: 40px;
+
             h1{
+                font-size: 3rem;
+                color: $darkBlue;
                 &::after {
                     @extend .line;
                 }
-                font-size: 3rem;
-                color: $darkBlue;
+               
             }
             p{
                 padding-right: 50px;
@@ -235,7 +197,9 @@ header
     }
 }
 
-// SERVICES
+/*---------------------------------
+   SERVICES
+-----------------------------------*/
 .services
 {
     padding: $padding;
@@ -244,22 +208,22 @@ header
     background-size: cover;
     color: $white;
     background-attachment: fixed;
+
     .container{
         display: flex;
         flex-wrap: wrap;
+
         article{
             flex: 0 0 45%;
             @media(max-width: 768px){
                 flex: 0 0 100%;
             }
             &:first-child{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+                @include flex(center, center, row, wrap);
                 @media(max-width: 768px){
                    order: 1;
                 }
+
                 i{
                     font-size: 5rem;
                     color: $orange;
@@ -270,12 +234,14 @@ header
                     }
                 }
             }
+
             h1{
                 font-size: 3rem;
                 &::after{
                     @extend .line;
                 }
             }
+            
             p{
                 margin-top: 30px;
             }
@@ -284,11 +250,14 @@ header
    }
 }
 
-// BLOG
+/*---------------------------------
+   BLOG
+-----------------------------------*/
 .blog
 {
     padding: $padding;
     text-align: center;
+
     h1{
         font-size: 3rem;
         color: $darkBlue;
@@ -301,14 +270,14 @@ header
     }
     
     .container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flex(space-between, center, row, wrap);
+    
         article{
             flex: 0 0 30%;
             @media(max-width:768px){
                 flex: 0 0 100%;
             }
+
             img{
                 width: 100%;
                 border-radius: 10%;
@@ -322,26 +291,39 @@ header
                 }
                
             }
+
             h3{
                 font-size: 2rem;
                 margin: 10px 0;
             }
+
             p{
                 text-align: justify;
             }
-            button{
-                @include btn1();
-            }
+
+             button{
+                 @include btn($orange, 2px solid $white, $white);
+                 margin-top: 20px;
+                 border-radius: 20px 0px 20px 0px;
+                 &:hover{
+                     border-radius: 0px 20px 0px 20px;
+                     background-color: $lightBlue;
+
+                 }
+             }
         }
     }
     
 }
 
-// GALLERY
+/*---------------------------------
+   GALLERY
+-----------------------------------*/
 .gallery
 {
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 0;
+
     h1{
         font-size: 2.5rem;
         color: $darkBlue;
@@ -350,50 +332,46 @@ header
             margin: 10px auto;
         }
     }
+
     .container{
-        width: 90%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        @include flex(space-between, center, row, wrap);
+      
         h4{
             background:$orange;
             display: inline;
             position: absolute;
             top: 0;
             right: 0;
-            font-size: 1.2rem;
+            font-size: 1rem;
             padding: 10px;
-            color: var(--bela);
+            color: $white;
         }
        
         .img1{
-            @extend .images;
+            @include images(url(img/works1.jpg));
         }
         .img2{
-            @extend .images;
-            background-image: url(img/works2.jpg);
+            @include images(url(img/works2.jpg));
         }
         .img3{
-            @extend .images;
-            background-image: url(img/works3.jpg);
+            @include images(url(img/works3.jpg));
         }
         .img4{
-            @extend .images;
-            background-image: url(img/works4.jpg);
+            @include images(url(img/works4.jpg));
         }
         .img5{
-            @extend .images;
-            background-image: url(img/works5.jpg);
+            @include images(url(img/works5.jpg));
         }
         .img6{
-            @extend .images;
-            background-image: url(img/works2.jpg);
+            @include images(url(img/works1.jpg));
         }
     }
 }
 
 
-// FOOTER
+/*---------------------------------
+   FOOTER
+-----------------------------------*/
 footer
 {
     background-image:linear-gradient(to right,rgba(253, 127, 69, .8), rgba(29, 82, 124, .8)), url(img/baloon.jpg);
@@ -402,6 +380,7 @@ footer
     height: 30vh;
     padding: $padding;
     text-align: center;
+
     i{
         font-size: 2rem;
         color: $darkBlue;

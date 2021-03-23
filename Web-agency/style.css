@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap");
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
 /* rgb(29, 82, 124) */
 /* rgb(69, 154, 211) */
 /* rgb(253, 127, 69) */
+/*---------------------------------
+    DAFAULT STYLES
+-----------------------------------*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,11 +22,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: auto; }
-  @media (max-width: 768px) {
-    .container {
-      width: 90%; } }
 
 ul {
   list-style-type: none; }
@@ -38,19 +41,9 @@ a {
   background: #fd7f45;
   margin: 10px 0; }
 
-.images, .gallery .container .img1, .gallery .container .img2, .gallery .container .img3, .gallery .container .img4, .gallery .container .img5, .gallery .container .img6 {
-  background-image: url(img/works1.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  flex: 0 0 30%;
-  margin-top: 20px;
-  border-bottom: 15px solid #459ad3;
-  position: relative; }
-  @media (max-width: 768px) {
-    .images, .gallery .container .img1, .gallery .container .img2, .gallery .container .img3, .gallery .container .img4, .gallery .container .img5, .gallery .container .img6 {
-      flex: 0 0 100%; } }
-
+/*---------------------------------
+   NAV
+-----------------------------------*/
 nav {
   background: linear-gradient(to right, #fd7f45, #1d527c);
   padding-top: 10px;
@@ -58,7 +51,9 @@ nav {
   nav .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
     @media (max-width: 768px) {
       nav .container {
         flex-direction: column; } }
@@ -84,15 +79,19 @@ nav {
         nav .container ul li a:hover {
           color: lightgray; }
 
+/*---------------------------------
+   HEADER
+-----------------------------------*/
 header {
   background-image: linear-gradient(rgba(29, 82, 124, 0.7), rgba(253, 127, 69, 0.7)), url(img/baloon.jpg);
   background-size: cover;
   background-position: center;
   height: 94vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   color: #fff;
   text-align: center; }
   @media (max-width: 768px) {
@@ -121,14 +120,21 @@ header {
     color: #fff; }
     header button:hover {
       transition: 0.3s ease;
-      cursor: pointer;
+      cursor: pointer; }
+    header button:hover {
       background-color: #fff;
-      color: #3c3b3c; }
+      color: #1d527c; }
 
+/*---------------------------------
+   ABOUT
+-----------------------------------*/
 .about {
-  padding: 100px 40px;
   display: flex;
-  flex-wrap: wrap; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 100px 40px; }
   @media (max-width: 768px) {
     .about {
       padding: 50px 0px; } }
@@ -143,9 +149,10 @@ header {
       height: 300px; }
     .about article:first-child {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: start;
+      flex-direction: column;
+      flex-wrap: wrap;
       padding-right: 40px; }
       .about article:first-child h1 {
         font-size: 3rem;
@@ -153,6 +160,9 @@ header {
       .about article:first-child p {
         padding-right: 50px; }
 
+/*---------------------------------
+   SERVICES
+-----------------------------------*/
 .services {
   padding: 100px 40px;
   background-image: linear-gradient(rgba(29, 82, 124, 0.9), rgba(29, 82, 124, 0.9)), url(img/header.jpg);
@@ -170,9 +180,10 @@ header {
           flex: 0 0 100%; } }
       .services .container article:first-child {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap; }
         @media (max-width: 768px) {
           .services .container article:first-child {
             order: 1; } }
@@ -189,6 +200,9 @@ header {
       .services .container article p {
         margin-top: 30px; }
 
+/*---------------------------------
+   BLOG
+-----------------------------------*/
 .blog {
   padding: 100px 40px;
   text-align: center; }
@@ -201,8 +215,10 @@ header {
       background-color: #1d527c; }
   .blog .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
     .blog .container article {
       flex: 0 0 30%; }
       @media (max-width: 768px) {
@@ -224,52 +240,141 @@ header {
       .blog .container article p {
         text-align: justify; }
       .blog .container article button {
-        background-color: #1d527c;
+        background: #fd7f45;
         padding: 15px 30px;
-        font-size: 1.2rem;
-        border-radius: 10px 20px 10px 20px;
-        color: #fff;
+        border: 2px solid #fff;
         text-transform: uppercase;
+        font-size: 1.2rem;
+        color: #fff;
         margin-top: 20px;
-        border: none; }
+        border-radius: 20px 0px 20px 0px; }
         .blog .container article button:hover {
           transition: 0.3s ease;
-          background-color: #fd7f45;
-          border-radius: 20px 10px 20px 10px; }
+          cursor: pointer; }
+        .blog .container article button:hover {
+          border-radius: 0px 20px 0px 20px;
+          background-color: #459ad3; }
 
+/*---------------------------------
+   GALLERY
+-----------------------------------*/
 .gallery {
   text-align: center;
-  padding: 50px 0; }
+  padding: 40px 0; }
   .gallery h1 {
     font-size: 2.5rem;
     color: #1d527c; }
     .gallery h1::after {
       margin: 10px auto; }
   .gallery .container {
-    width: 90%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
     .gallery .container h4 {
       background: #fd7f45;
       display: inline;
       position: absolute;
       top: 0;
       right: 0;
-      font-size: 1.2rem;
+      font-size: 1rem;
       padding: 10px;
-      color: var(--bela); }
+      color: #fff; }
+    .gallery .container .img1 {
+      background-image: url(img/works1.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      flex: 0 0 30%;
+      margin-top: 40px;
+      border-bottom: 15px solid #459ad3;
+      position: relative; }
+      @media (max-width: 768px) {
+        .gallery .container .img1 {
+          flex: 0 0 100%; } }
+      .gallery .container .img1:hover {
+        transform: scale(1.1);
+        transition-duration: 1.4s; }
     .gallery .container .img2 {
-      background-image: url(img/works2.jpg); }
+      background-image: url(img/works2.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      flex: 0 0 30%;
+      margin-top: 40px;
+      border-bottom: 15px solid #459ad3;
+      position: relative; }
+      @media (max-width: 768px) {
+        .gallery .container .img2 {
+          flex: 0 0 100%; } }
+      .gallery .container .img2:hover {
+        transform: scale(1.1);
+        transition-duration: 1.4s; }
     .gallery .container .img3 {
-      background-image: url(img/works3.jpg); }
+      background-image: url(img/works3.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      flex: 0 0 30%;
+      margin-top: 40px;
+      border-bottom: 15px solid #459ad3;
+      position: relative; }
+      @media (max-width: 768px) {
+        .gallery .container .img3 {
+          flex: 0 0 100%; } }
+      .gallery .container .img3:hover {
+        transform: scale(1.1);
+        transition-duration: 1.4s; }
     .gallery .container .img4 {
-      background-image: url(img/works4.jpg); }
+      background-image: url(img/works4.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      flex: 0 0 30%;
+      margin-top: 40px;
+      border-bottom: 15px solid #459ad3;
+      position: relative; }
+      @media (max-width: 768px) {
+        .gallery .container .img4 {
+          flex: 0 0 100%; } }
+      .gallery .container .img4:hover {
+        transform: scale(1.1);
+        transition-duration: 1.4s; }
     .gallery .container .img5 {
-      background-image: url(img/works5.jpg); }
+      background-image: url(img/works5.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      flex: 0 0 30%;
+      margin-top: 40px;
+      border-bottom: 15px solid #459ad3;
+      position: relative; }
+      @media (max-width: 768px) {
+        .gallery .container .img5 {
+          flex: 0 0 100%; } }
+      .gallery .container .img5:hover {
+        transform: scale(1.1);
+        transition-duration: 1.4s; }
     .gallery .container .img6 {
-      background-image: url(img/works2.jpg); }
+      background-image: url(img/works1.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 500px;
+      flex: 0 0 30%;
+      margin-top: 40px;
+      border-bottom: 15px solid #459ad3;
+      position: relative; }
+      @media (max-width: 768px) {
+        .gallery .container .img6 {
+          flex: 0 0 100%; } }
+      .gallery .container .img6:hover {
+        transform: scale(1.1);
+        transition-duration: 1.4s; }
 
+/*---------------------------------
+   FOOTER
+-----------------------------------*/
 footer {
   background-image: linear-gradient(to right, rgba(253, 127, 69, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
   background-size: cover;
