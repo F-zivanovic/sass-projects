@@ -1,5 +1,14 @@
 // MIXINS
 
+@mixin flex ($justify, $align, $direction, $wrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+
+}
+
 @mixin btn {
     border: none;
     color: $white;
@@ -15,6 +24,16 @@
         background-color: $pink;
         transition: $transition;
     }
+    
+}
+
+@mixin image ($bg, $height, $width) {
+    background-image:$bg;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: $height;
+    width: $width;
     
 }
 
