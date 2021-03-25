@@ -47,17 +47,13 @@ NAV
 nav{
     background-color: $white;
     padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center, row, wrap);
     @media(max-width:768px){
-        padding: 30px 10px;
-        justify-content: space-evenly;
+        flex-direction: column;
     }
 
     .logo{
-        display: flex;
-        align-items: center;
+        @include flex(center, center, row, wrap);
         text-transform: uppercase;
 
         h1{
@@ -68,15 +64,13 @@ nav{
                 font-size: 1.5rem;
             }
         }
-
-
     }
 
     ul{
         display: flex;
 
         li{
-            padding: 0 30px;
+            padding: 0 10px;
             border-right: 2px solid $black;
             @media(max-width:768px){
                 padding: 0 5px;
@@ -90,6 +84,7 @@ nav{
                     transition: $transition;
                 }
             }
+
             .active{
                 color: $lighBlue;
             }
@@ -101,15 +96,8 @@ nav{
 HEADER
 *********************/
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include image (url(img/banner.jpg), 80vh, 100%);
+    @include flex (center, center, column, wrap);
     color: $white;
 
     h1{
@@ -163,12 +151,9 @@ TOP PLACES
         flex-wrap: wrap;
 
         article{
+
             &:first-child{
-                background-image: url(img/tm-img-01.jpg);
-                background-position: center;
-                background-size: cover;
-                width: 100%;
-                height: 50vh;
+                @include image(url(img/tm-img-01.jpg), 50vh, 100%);
                 flex: 0 0 50%;
                 @media(max-width:768px){
                     flex: 0 0 100%;
@@ -177,10 +162,7 @@ TOP PLACES
 
             &:nth-child(2){
                 flex: 0 0 50%;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                flex-direction: column;
+                @include flex(center, flex-start, column, wrap);
                 background-color: $lighBlue;
                 padding: 50px;
                 height: 50vh;
@@ -195,6 +177,7 @@ TOP PLACES
                     font-size: 2rem;
                     font-weight: 300;
                 }
+
                 p{
                     color: $white;
                 }
@@ -203,7 +186,6 @@ TOP PLACES
                     @include btn;
                     background-color: $white;
                     color: $lighBlue;
-
                 }
 
             }
@@ -215,13 +197,14 @@ TOP PLACES
 
             &:nth-child(4){
                 @include place;
-                background-color:$pink;
-                
+                background-color:$pink;  
             }
+
             &:nth-child(5){
                 @include place1;
                 background-image: url(img/tm-img-06.jpg);
             }
+
             &:nth-child(6){
                 @include place;
                 
@@ -237,8 +220,10 @@ CONTINENTS
 .continents{
 
     background-color: $lighBlue;
+
     ul{
         display: flex;
+
         li{
             flex: 1;
             align-items: center;
@@ -247,23 +232,25 @@ CONTINENTS
                 transition: .4 ease;
                 transition-duration: 2s;
             }
+
             a{
                 img{
                     padding: 40px 0;
-                    width: 80%;
+                    width: 90%;
                     
                 }
             }
         }
     }
    
-  }
+}
   
 /*********************
 HOTELS
 *********************/
 .hotels{
     padding: $padding;
+
     .row{
         display: flex;
         flex-wrap: wrap;
@@ -272,11 +259,7 @@ HOTELS
         article{
             &:first-child{
                 flex: 0 0 30%;
-                background-image: url(img/tm-img-01.jpg);
-                background-position: center;
-                background-size: cover;
-                width: 100%;
-                height: 30vh;
+                @include image(url(img/tm-img-01.jpg), 30vh, 100%);
                 @media(max-width:768px){
                     flex: 0 0 100%;
                 }
@@ -308,9 +291,7 @@ HOTELS
                 color: $white;
                 font-size: 2rem;
                 font-weight: 300;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex (center, center, row, wrap);
                 @media(max-width:768px){
                     flex: 0 0 100%;
                     margin-top: 20px;

@@ -36,14 +36,18 @@ nav {
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
   @media (max-width: 768px) {
     nav {
-      padding: 30px 10px;
-      justify-content: space-evenly; } }
+      flex-direction: column; } }
   nav .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-transform: uppercase; }
     nav .logo h1 {
       letter-spacing: 2px;
@@ -55,7 +59,7 @@ nav {
   nav ul {
     display: flex; }
     nav ul li {
-      padding: 0 30px;
+      padding: 0 10px;
       border-right: 2px solid black; }
       @media (max-width: 768px) {
         nav ul li {
@@ -73,15 +77,17 @@ nav {
 HEADER
 *********************/
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner.jpg);
+  background-image: url(img/banner.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   color: white; }
   header h1 {
     font-size: 3rem;
@@ -144,8 +150,9 @@ TOP PLACES
     background-image: url(img/tm-img-01.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
     height: 50vh;
+    width: 100%;
     flex: 0 0 50%; }
     @media (max-width: 768px) {
       .places .row article:first-child {
@@ -156,6 +163,7 @@ TOP PLACES
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #69c6ba;
     padding: 50px;
     height: 50vh; }
@@ -298,7 +306,7 @@ CONTINENTS
         transition-duration: 2s; }
       .continents ul li a img {
         padding: 40px 0;
-        width: 80%; }
+        width: 90%; }
 
 /*********************
 HOTELS
@@ -314,8 +322,9 @@ HOTELS
       background-image: url(img/tm-img-01.jpg);
       background-position: center;
       background-size: cover;
-      width: 100%;
-      height: 30vh; }
+      background-repeat: no-repeat;
+      height: 30vh;
+      width: 100%; }
       @media (max-width: 768px) {
         .hotels .row article:first-child {
           flex: 0 0 100%; } }
@@ -341,7 +350,9 @@ HOTELS
       font-weight: 300;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap; }
       @media (max-width: 768px) {
         .hotels .row article:nth-child(3) {
           flex: 0 0 100%;
