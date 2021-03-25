@@ -1,16 +1,20 @@
-// GOOGLE FONTS
+/*********************
+GOOGLE FONTS 
+*********************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600;300&display=swap');
 
 
-// VARIABLES
+/*********************
+EXTERNAL FILES
+*********************/
+@import 'mixins.scss';
 @import 'variables.scss';
 
-// MIXINS
-@import 'mixins.scss';
 
-
-// DEFAULT STYLES
+/*********************
+DEFAULT STYLES
+*********************/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -37,7 +41,9 @@ a{
     text-decoration: none;
 }
 
-// NAV
+/*********************
+NAV
+*********************/
 nav{
     background-color: $white;
     padding: 20px 50px;
@@ -91,7 +97,9 @@ nav{
     }
 }
 
-// HEADER
+/*********************
+HEADER
+*********************/
 header{
     background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/banner.jpg);
     background-position: center;
@@ -120,7 +128,9 @@ header{
     }
 }
 
-// ABOUT
+/*********************
+ABOUT
+*********************/
 .about{
     padding: $padding;
     text-align: center;
@@ -143,7 +153,9 @@ header{
     }
 }
 
-// TOP PLACES
+/*********************
+TOP PLACES
+*********************/
 .places{
 
     .row{
@@ -219,7 +231,9 @@ header{
 
 }
 
-// CONTINENTS
+/*********************
+CONTINENTS
+*********************/
 .continents{
 
     background-color: $lighBlue;
@@ -245,14 +259,15 @@ header{
    
   }
   
-// HOTELS
+/*********************
+HOTELS
+*********************/
 .hotels{
     padding: $padding;
     .row{
         display: flex;
         flex-wrap: wrap;
         margin-top: 20px;
-        // justify-content: space-between;
 
         article{
             &:first-child{
@@ -329,7 +344,9 @@ header{
 }
 
 
-// FOOTER
+/*********************
+FOOTER
+*********************/
 footer
 {
     background-color: $lighBlue;

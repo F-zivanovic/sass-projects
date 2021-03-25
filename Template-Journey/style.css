@@ -1,5 +1,14 @@
+/*********************
+GOOGLE FONTS 
+*********************/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600;300&display=swap");
+/*********************
+EXTERNAL FILES
+*********************/
+/*********************
+DEFAULT STYLES
+*********************/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,6 +28,9 @@ ul {
 a {
   text-decoration: none; }
 
+/*********************
+NAV
+*********************/
 nav {
   background-color: white;
   padding: 20px 50px;
@@ -57,6 +69,9 @@ nav {
       nav ul li .active {
         color: #69c6ba; }
 
+/*********************
+HEADER
+*********************/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner.jpg);
   background-position: center;
@@ -90,6 +105,9 @@ header {
       background-color: #c66995;
       transition: 0.4 ease; }
 
+/*********************
+ABOUT
+*********************/
 .about {
   padding: 50px 20px;
   text-align: center;
@@ -116,6 +134,9 @@ header {
       background-color: #c66995;
       transition: 0.4 ease; }
 
+/*********************
+TOP PLACES
+*********************/
 .places .row {
   display: flex;
   flex-wrap: wrap; }
@@ -261,6 +282,9 @@ header {
         background-color: #c66995;
         transition: 0.4 ease; }
 
+/*********************
+CONTINENTS
+*********************/
 .continents {
   background-color: #69c6ba; }
   .continents ul {
@@ -276,6 +300,9 @@ header {
         padding: 40px 0;
         width: 80%; }
 
+/*********************
+HOTELS
+*********************/
 .hotels {
   padding: 50px 20px; }
   .hotels .row {
@@ -394,6 +421,9 @@ header {
         .hotels .row article:nth-child(9) {
           flex: 0 0 100%; } }
 
+/*********************
+FOOTER
+*********************/
 footer {
   background-color: #69c6ba;
   padding: 50px 20px;
