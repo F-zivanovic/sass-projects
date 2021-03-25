@@ -109,7 +109,8 @@ header {
     header button:hover {
       border-radius: 0px 20px 0px 20px;
       background-color: #c66995;
-      transition: 0.4 ease; }
+      transition: 0.4 ease;
+      cursor: pointer; }
 
 /*********************
 ABOUT
@@ -138,7 +139,8 @@ ABOUT
     .about button:hover {
       border-radius: 0px 20px 0px 20px;
       background-color: #c66995;
-      transition: 0.4 ease; }
+      transition: 0.4 ease;
+      cursor: pointer; }
 
 /*********************
 TOP PLACES
@@ -163,7 +165,6 @@ TOP PLACES
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;
     background-color: #69c6ba;
     padding: 50px;
     height: 50vh; }
@@ -193,15 +194,16 @@ TOP PLACES
       .places .row article:nth-child(2) button:hover {
         border-radius: 0px 20px 0px 20px;
         background-color: #c66995;
-        transition: 0.4 ease; }
+        transition: 0.4 ease;
+        cursor: pointer; }
   .places .row article:nth-child(3) {
-    background-image: url(img/tm-img-01.jpg);
+    background-image: url(img/tm-img-03.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
     height: 50vh;
-    flex: 0 0 50%;
-    background-image: url(img/tm-img-03.jpg); }
+    width: 100%;
+    flex: 0 0 50%; }
     @media (max-width: 768px) {
       .places .row article:nth-child(3) {
         flex: 0 0 100%; } }
@@ -213,8 +215,7 @@ TOP PLACES
     flex-direction: column;
     background-color: #69c6ba;
     padding: 50px;
-    height: 50vh;
-    background-color: #c66995; }
+    height: 50vh; }
     @media (max-width: 768px) {
       .places .row article:nth-child(4) {
         flex: 0 0 100%;
@@ -241,15 +242,16 @@ TOP PLACES
       .places .row article:nth-child(4) button:hover {
         border-radius: 0px 20px 0px 20px;
         background-color: #c66995;
-        transition: 0.4 ease; }
+        transition: 0.4 ease;
+        cursor: pointer; }
   .places .row article:nth-child(5) {
-    background-image: url(img/tm-img-01.jpg);
+    background-image: url(img/tm-img-06.jpg);
     background-position: center;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
     height: 50vh;
-    flex: 0 0 50%;
-    background-image: url(img/tm-img-06.jpg); }
+    width: 100%;
+    flex: 0 0 50%; }
     @media (max-width: 768px) {
       .places .row article:nth-child(5) {
         flex: 0 0 100%; } }
@@ -288,7 +290,8 @@ TOP PLACES
       .places .row article:nth-child(6) button:hover {
         border-radius: 0px 20px 0px 20px;
         background-color: #c66995;
-        transition: 0.4 ease; }
+        transition: 0.4 ease;
+        cursor: pointer; }
 
 /*********************
 CONTINENTS

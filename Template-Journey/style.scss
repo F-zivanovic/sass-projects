@@ -161,48 +161,27 @@ TOP PLACES
             }
 
             &:nth-child(2){
-                flex: 0 0 50%;
-                @include flex(center, flex-start, column, wrap);
-                background-color: $lighBlue;
-                padding: 50px;
-                height: 50vh;
-                @media(max-width:768px){
-                    flex: 0 0 100%;
-                    margin: 0;
-                    padding: 30px;
-                }
-
-                h3{
-                    color: $white;
-                    font-size: 2rem;
-                    font-weight: 300;
-                }
-
-                p{
-                    color: $white;
-                }
-
-                button{
-                    @include btn;
-                    background-color: $white;
-                    color: $lighBlue;
-                }
-
+                @include place;
             }
 
             &:nth-child(3){
-                @include place1;
-                background-image: url(img/tm-img-03.jpg);
+                @include image (url(img/tm-img-03.jpg), 50vh, 100%);
+                flex: 0 0 50%;
+                @media(max-width:768px){
+                flex: 0 0 100%;
+                }
             }
 
             &:nth-child(4){
                 @include place;
-                background-color:$pink;  
             }
 
             &:nth-child(5){
-                @include place1;
-                background-image: url(img/tm-img-06.jpg);
+                @include image (url(img/tm-img-06.jpg), 50vh, 100%);
+                flex: 0 0 50%;
+                @media(max-width:768px){
+                flex: 0 0 100%;
+                }
             }
 
             &:nth-child(6){
