@@ -256,6 +256,9 @@ header {
     .products .row article {
       padding: 10px 0;
       flex: 0 0 30%; }
+      .products .row article:hover {
+        transform: rotate(360deg);
+        transition-duration: 2s; }
       @media (max-width: 768px) {
         .products .row article {
           flex: 0 0 100%; } }
