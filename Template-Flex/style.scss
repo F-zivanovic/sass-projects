@@ -1,16 +1,19 @@
-// GOOGLE FONTS
+/*---------------------------------
+    GOOGLE FONTS
+-----------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro');
 
 
-// VARIABLES
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
 @import 'variables.scss';
-
-
-// MIXINS
 @import 'mixins.scss';
 
 
-// DEFAULT STYLES
+/*---------------------------------
+    DEFAULT STYLES
+-----------------------------------*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -45,7 +48,9 @@ a{
     height: 2px;
 }
 
-//HEADER
+/*---------------------------------
+    HEADER
+-----------------------------------*/
 header{
     background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/header.jpg);
     background-position: center;
@@ -131,7 +136,9 @@ header{
     }
 }
 
-// ABOUT
+/*---------------------------------
+    ABOUT
+-----------------------------------*//
 .about{
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +191,9 @@ header{
     }
 }
 
-// NUMBERS
+/*---------------------------------
+    NUMBERS
+-----------------------------------*/
 .numbers
 {
   background-image: url(img/section8.jpg);
@@ -224,7 +233,9 @@ header{
 
 
 
-//BACKGROUND
+/*---------------------------------
+    BACKGROUND
+-----------------------------------*/
  .background{
      background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/three.jpg);
      background-position: center;
@@ -261,7 +272,9 @@ header{
      }
  }
 
-//  PRODUCTS
+/*---------------------------------
+    PRODUCTS
+-----------------------------------*/
 .products{
     padding: $padding;
     text-align: center;
@@ -310,7 +323,9 @@ header{
 
 }
 
-// GALLERY
+/*---------------------------------
+    GALLERY
+-----------------------------------*/
 .gallery{
     article{
         background-color: $red;
