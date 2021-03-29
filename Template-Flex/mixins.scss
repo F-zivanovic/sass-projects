@@ -24,3 +24,9 @@
     flex-wrap: $wrap;
     
 }
+
+@mixin grid ($bg) {
+    background-image: $bg;
+    background-position: center;
+    background-size: cover;
+}
