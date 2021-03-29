@@ -291,6 +291,9 @@ header {
   display: grid;
   grid-template-columns: 50% 25% 1fr;
   grid-template-rows: 50vh 50vh; }
+  .gallery .grid span:hover {
+    transform: scale(0.9);
+    transition-duration: 1.5s; }
   .gallery .grid span:first-child {
     background-image: url(img/project3.jpg);
     background-position: center;
