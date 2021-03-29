@@ -58,14 +58,14 @@ header{
     background-repeat: no-repeat;
     height: 100vh;
 
+
     nav{
         background-color: $white;
-        display: flex;
-       justify-content: space-between;
+        @include flex(space-between, center, row, nowrap);
        position: relative;
        top: 30px;
        margin: auto;
-       width: 90%;
+       width: 95%;
        padding: 10px 20px;
 
        .logo{
@@ -84,11 +84,10 @@ header{
        }
 
        ul{
-           display: flex;
-           align-items: center;
+           @include flex(center, center, row, nowrap);
 
            li{
-               padding: 0 30px;
+               padding: 0 20px;
                @media(max-width:768px){
                    padding: 0 10px;
                }
@@ -108,12 +107,9 @@ header{
     }
 
     hgroup{
-        display: flex;
-        color: $white;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center, column, nowrap);
         height: 90vh;
+        color: $white;
         text-align: center;
         padding: 0 20px;
 
@@ -130,6 +126,7 @@ header{
             font-size: 1.2rem;
             padding-bottom: 20px;
         }
+
         button{
           @include btn;
         }   
@@ -138,20 +135,20 @@ header{
 
 /*---------------------------------
     ABOUT
------------------------------------*//
+-----------------------------------*/
 .about{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex (center, center, row, wrap);
 
     article{
-        flex: 0 0 50;
+        flex: 0 0 50%;
         @media(max-width:768px){
             flex: 0 0 100%;
         }
+
         &:first-child{
             padding: 100px 20px;
-            justify-content: center;
-            align-items: flex-start;
+            @include flex (center, flex-start, column, nowrap);
+
             p{
                 &:first-child{
                     color: $red;
@@ -165,6 +162,7 @@ header{
                
             }
         }
+
         h3{
             font-size: 1.5rem;
             padding: 10px 0px;
@@ -174,21 +172,15 @@ header{
             @include btn;
             margin-top: 20px;
         }
-    }
 
-    article{
-        flex: 0 0 50%;
-        @media(max-width:768px){
-            flex: 0 0 100%;
-        }
-        &:nth-child(2){
-            background-image: url(img/one.jpg);
+        .responsive{
             width: 100%;
+            height: auto;
             background-position: center;
             background-size: cover;
-            height: 50vh;
         }
     }
+
 }
 
 /*---------------------------------
@@ -199,9 +191,8 @@ header{
   background-image: url(img/section8.jpg);
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include flex(space-between, center, row, wrap);
+
 
   article{
       padding: $padding;
@@ -212,6 +203,7 @@ header{
       }
 
       span{
+
           &:first-child{
               color: $red;
               font-size: 3rem;
@@ -219,6 +211,7 @@ header{
               font-weight: 700;
           }
       }
+
       p{
           font-weight: 700;
       }
@@ -228,10 +221,8 @@ header{
           font-size: 1.4rem;
       }
   }  
+
 }
-
-
-
 
 /*---------------------------------
     BACKGROUND
@@ -243,10 +234,7 @@ header{
      height: 60vh;
 
      hgroup{
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: flex-end;
+         @include flex(center, flex-end, column, nowrap);
          text-align: right;
          height: 60vh;
          padding-right: 50px;
@@ -291,9 +279,7 @@ header{
 
     .row{
         padding: 50px 0px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        @include flex(space-evenly, center, row, wrap);
         width: 90%;
         margin: auto;
 
@@ -303,6 +289,7 @@ header{
             @media(max-width:768px){
                 flex: 0 0 100%;
             }
+
             &:nth-child(2){
                 box-shadow: 0 0 10px gray;
             }
@@ -332,11 +319,8 @@ header{
         height: 20vh;
         text-align: center;
         color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+        @include flex (center, center, column, nowrap);
+    
         P{
             font-weight: 600;
             font-size: 1.1rem;
@@ -403,11 +387,12 @@ header{
     .row{
         background-color: $red;
         color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         padding: $padding;
         font-size: 1.5rem;
+
+        i{
+            color: rebeccapurple;
+        }
     }
 }
