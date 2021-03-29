@@ -1,3 +1,9 @@
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
+/*---------------------------------
+    DEFAULT STYLES
+-----------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +26,9 @@ a {
   width: 80%;
   margin: auto; }
 
+/*---------------------------------
+    NAV
+-----------------------------------*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -52,6 +61,9 @@ nav {
       transition: 0.4s ease;
       color: #fff; }
 
+/*---------------------------------
+    HEADER
+-----------------------------------*/
 header {
   display: flex;
   flex-direction: column;
@@ -89,6 +101,9 @@ header {
       background: #08204e;
       transition: 0.4s ease; }
 
+/*---------------------------------
+    DEVELOPERS
+-----------------------------------*/
 .developers {
   display: flex;
   padding: 70px 0px;
@@ -112,6 +127,9 @@ header {
     letter-spacing: 2px;
     padding: 10px 0px; }
 
+/*---------------------------------
+    ABOUT
+-----------------------------------*/
 .about {
   display: flex;
   padding: 70px 0px;
@@ -148,6 +166,9 @@ header {
       .about article:nth-child(4) {
         flex: 0 0 100%; } }
 
+/*---------------------------------
+    TOOLS
+-----------------------------------*/
 .tools {
   padding: 70px 0px; }
   .tools hgroup {
@@ -199,6 +220,9 @@ header {
           .tools .container article:nth-child(6) {
             flex: 0 0 100%; } }
 
+/*---------------------------------
+    FOOTER
+-----------------------------------*/
 footer {
   background-color: #08204e;
   color: #fff;

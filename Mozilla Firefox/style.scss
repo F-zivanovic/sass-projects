@@ -1,11 +1,13 @@
-// VARIABLES FILE
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
 @import 'variables.scss';
-
-// MIXINS FILE
 @import 'mixins.scss';
 
 
-// DEFAULT STYLES
+/*---------------------------------
+    DEFAULT STYLES
+-----------------------------------*/
 
 *{
     margin: 0;
@@ -36,7 +38,9 @@ a{
     margin: auto;
 }
 
-// NAV
+/*---------------------------------
+    NAV
+-----------------------------------*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -70,11 +74,12 @@ nav{
     }
 }
 
-// HEADER
+/*---------------------------------
+    HEADER
+-----------------------------------*/
 header{
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
     align-items: center;
     text-align: center;
     height: 90vh;
@@ -111,7 +116,9 @@ header{
     }
 }
 
-// DEVELOPERS
+/*---------------------------------
+    DEVELOPERS
+-----------------------------------*/
 .developers{
     display: flex;
     padding: $padding;
@@ -146,7 +153,9 @@ header{
    
 }
 
-// ABOUT
+/*---------------------------------
+    ABOUT
+-----------------------------------*/
 .about{
     display: flex;
     padding: $padding;
@@ -201,7 +210,9 @@ header{
 
 }
 
-// TOOLS
+/*---------------------------------
+    TOOLS
+-----------------------------------*/
 .tools{
     padding: $padding;
 
@@ -259,7 +270,9 @@ header{
     }
 }
 
-// FOOTER
+/*---------------------------------
+    FOOTER
+-----------------------------------*/
 footer{
 
     background-color: $darkBlue;
