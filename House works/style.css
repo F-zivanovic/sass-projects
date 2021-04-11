@@ -1,3 +1,9 @@
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
+/*---------------------------------
+    DAFAULT STYLES
+-----------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +22,9 @@ body {
 ul {
   list-style-type: none; }
 
+/*---------------------------------
+    NAV
+-----------------------------------*/
 nav {
   background-color: #313131;
   padding: 20px;
@@ -76,6 +85,9 @@ nav {
           color: #313131;
           cursor: pointer; }
 
+/*---------------------------------
+    HEADER
+-----------------------------------*/
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/header.jpg);
   background-position: center;
@@ -121,6 +133,9 @@ header {
         transition: 0.4s ease;
         cursor: pointer; }
 
+/*---------------------------------
+   PRICE
+-----------------------------------*/
 .price {
   padding: 60px 0;
   display: flex;
@@ -160,6 +175,9 @@ header {
         transition: 0.4s ease;
         cursor: pointer; }
 
+/*---------------------------------
+    ADVANTAGES
+-----------------------------------*/
 .advantages {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg2.jpg);
   background-position: center;
@@ -221,6 +239,9 @@ header {
           transition: 0.4s ease;
           cursor: pointer; }
 
+/*---------------------------------
+    TEAM
+-----------------------------------*/
 .team {
   padding: 60px 0;
   text-align: center; }
@@ -264,6 +285,9 @@ header {
           width: 100%;
           height: 220px; }
 
+/*---------------------------------
+    SERVICES
+-----------------------------------*/
 .services {
   padding: 60px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg2.jpg);
@@ -316,6 +340,9 @@ header {
         .services .container article:first-child p {
           margin: 20px 0px; }
 
+/*---------------------------------
+    ABOUT
+-----------------------------------*/
 .about {
   padding: 60px 0; }
   .about .container {
@@ -329,6 +356,9 @@ header {
       .about .container article h2 {
         font-size: 2.5rem; }
 
+/*---------------------------------
+    CONTACT
+-----------------------------------*/
 .contact {
   padding: 60px 0;
   text-align: center;

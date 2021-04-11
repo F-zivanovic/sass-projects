@@ -1,16 +1,19 @@
-// VARIABLES SCSS
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
 @import 'variables.scss';
-
-// MIXINS SCSS
 @import 'mixins.scss';
 
+
+/*---------------------------------
+    DAFAULT STYLES
+-----------------------------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-// BASIC STYLES
 
 body{
     line-height: 1.3;
@@ -28,8 +31,9 @@ ul{
     list-style-type: none;
 }
 
-
-// NAV
+/*---------------------------------
+    NAV
+-----------------------------------*/
 nav{
     background-color: $primary;
     padding: 20px;
@@ -83,7 +87,9 @@ nav{
 
 }
 
-// HEADER
+/*---------------------------------
+    HEADER
+-----------------------------------*/
 header{
     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/header.jpg);
     background-position: center;
@@ -137,7 +143,9 @@ header{
 
 }
 
-// PRICE
+/*---------------------------------
+   PRICE
+-----------------------------------*/
 .price{
     padding: $padding;
     @include flex(center, center, row, wrap);
@@ -173,7 +181,9 @@ header{
     }
 }
 
-// ADVANTAGES
+/*---------------------------------
+    ADVANTAGES
+-----------------------------------*/
 .advantages{
     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
     background-position: center;
@@ -238,7 +248,9 @@ header{
     }
 }
 
-// TEAM
+/*---------------------------------
+    TEAM
+-----------------------------------*/
 .team{
     padding: $padding;
     text-align: center;
@@ -293,7 +305,9 @@ header{
     }
 }
 
-// SERVICES
+/*---------------------------------
+    SERVICES
+-----------------------------------*/
 .services{
     padding: $padding;
     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
@@ -350,7 +364,9 @@ header{
     }
 }
 
-// ABOUT
+/*---------------------------------
+    ABOUT
+-----------------------------------*/
 .about{
     padding: $padding;
 
@@ -371,7 +387,9 @@ header{
     }
 }
 
-// CONTACT
+/*---------------------------------
+    CONTACT
+-----------------------------------*/
 .contact{
     padding: $padding;
     text-align: center;
