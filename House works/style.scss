@@ -79,7 +79,7 @@ nav{
             @include flex(flex-end, center, row, wrap);
     
             button{
-             @include btn;
+             @include btn(1px solid $white, $white);
             }
         }
     
@@ -112,31 +112,15 @@ header{
         button{
             
             &:first-child{
-                background-color: $tertiary;
-                padding: 15px 30px;
-                color: $white;
-                font-size: 1rem;
+                @include btn(1px solid $tertiary, $white);
                 margin-right: 10px;
                 &:hover{
-                    background: none;
-                    transition: $transition;
-                    border: 2px solid $tertiary;
-                    cursor: pointer;
+                    border: none;
                 }
             }
 
             &:last-child{
-                background: none;
-                border: 2px solid $white;
-                color: $white;
-                padding: 15px 30px;
-                font-size: 1rem;
-                &:hover{
-                    background-color: $white;
-                    color: $text;
-                    transition: $transition;
-                    cursor: pointer;
-                }
+               @include btn(1px solid $white, $white);
             }
         }
     }
@@ -176,7 +160,11 @@ header{
             padding: 20px 0px;
         }
         button{
-           @include btn1;
+           @include btn(1px solid $tertiary, $tertiary);
+           &:hover{
+            background-color: $tertiary;
+            color: $white
+           }
         }
     }
 }
@@ -224,8 +212,7 @@ header{
             }
 
             img{
-                width: 100%;
-               
+                width: 100%; 
             }
             h4{
                 padding: 20px;
@@ -241,7 +228,12 @@ header{
             }
 
             button{
-                @include btn1;
+                @include btn(1px solid $tertiary, $tertiary);
+                &:hover{
+                   
+                    background-color: $tertiary;
+                    color: $white
+                   }
                margin: 20px 0px;
             }
         }
@@ -315,10 +307,10 @@ header{
     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
     color: $white;
     @media(max-width:768px){
-        height: 120vh;
+        height: 100vh;
     }
 
     .container{
@@ -327,13 +319,7 @@ header{
         article{
             flex: 0 0 45%;
             @media(max-width:768px){
-                flex: 0 0 100%;
-            }
-
-            i{
-                color: $secondary;
-                font-size: 8rem;
-                padding-top: 40px;
+                flex: 0 0 100%;  
             }
 
             h3{
@@ -343,9 +329,7 @@ header{
             }
 
             button{
-                @include btn1;
-                border: 2px solid$lightgray;
-                color: $lightgray;
+                @include btn(1px solid $white, $white);
                 margin-top: 20px;
             }
 
@@ -377,13 +361,9 @@ header{
 
         article{
             flex: 0 0 30%;
-            @media(max-width:768px){
-
-            }
 
             h2{
                 font-size: 2.5rem;
-
             }
         }
     }
@@ -400,24 +380,21 @@ header{
     button{
 
         &:first-child{
-            @include btn1;
-            background-color: $secondary;
-            border: none;
-            color: $primary;
+            @include btn(1px solid $secondary, $lightgray);
+            &:hover{
+                border: 1px solid $white;
+            }
         }
 
         &:nth-child(2){
-            @include btn1;
-            border: 1px solid $white;
-            color: $white;
+            @include btn(1px solid $white, $white);
         }
         &:nth-child(3){
-            @include btn1;
-            background-color: $tertiary;
-            color: $white;
+            @include btn(1px solid $tertiary, $white);
             &:hover{
-                background: none;
-            }
+                background-color: $tertiary;
+                color: $white
+             }
         }
     }
 }
