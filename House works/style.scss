@@ -47,6 +47,7 @@ nav{
             @media(max-width:768px){
                 flex-direction: column;
             }
+            
             img{
                 width: 80px;
             }
@@ -57,6 +58,7 @@ nav{
                 font-weight: 700;
                 font-size: 1.5rem;
                 margin-left: 20px;
+
                 &:hover{
                     transition: $transition;
                     color: $lightgray;
@@ -82,19 +84,15 @@ nav{
              @include btn(1px solid $white, $white);
             }
         }
-    
     }
-
 }
 
 /*---------------------------------
     HEADER
 -----------------------------------*/
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/header.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 80vh;
+    @include img(80vh, 100%);
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/header.jpg); 
     @include flex(center, center, column, wrap);
     color: $white;
 
@@ -114,6 +112,7 @@ header{
             &:first-child{
                 @include btn(1px solid $tertiary, $white);
                 margin-right: 10px;
+
                 &:hover{
                     border: none;
                 }
@@ -139,9 +138,11 @@ header{
         border: 1px solid $lightgray;
         text-align: center;
         padding: 30px;
+
         @media(max-width:768px){
             flex: 0 0 100%;
         }
+
         &:hover{
             transform: scale(1.1);
             background: $white;
@@ -151,16 +152,20 @@ header{
         h2{
             font-size: 1.6rem;
         }
+
         p{
             padding: 30px 0px;
         }
+
         .drugi{
             font-size: 4rem;
             color: $darkblue;
             padding: 20px 0px;
         }
+
         button{
            @include btn(1px solid $tertiary, $tertiary);
+
            &:hover{
             background-color: $tertiary;
             color: $white
@@ -173,12 +178,11 @@ header{
     ADVANTAGES
 -----------------------------------*/
 .advantages{
+    @include img(90vh, 100%);
     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 90vh;
     padding: $padding;
     text-align: center;
+
     @media(max-width:768px){
         height: 250vh;
     }
@@ -206,6 +210,7 @@ header{
             background-color: $white;
             border: 2px solid $white;
             border-radius: 10px;
+
             @media(max-width:768px){
                 flex: 0 0 100%;
                 margin-top: 20px;
@@ -229,12 +234,14 @@ header{
 
             button{
                 @include btn(1px solid $tertiary, $tertiary);
+                margin: 20px 0px;
+
                 &:hover{
                    
                     background-color: $tertiary;
                     color: $white
-                   }
-               margin: 20px 0px;
+                }
+               
             }
         }
     }
@@ -257,15 +264,17 @@ header{
         @include flex(space-between, center, row, wrap);
 
         article{
+            @include flex(space-between, center, row, wrap);
             flex: 0 0 45%;
             margin-top: 70px;
-            height: 30vh;
+            height: 25vh;
             overflow: hidden;
+           
+
             @media(max-width:768px){
                 flex: 0 0 100%;
             }
 
-            @include flex(space-between, center, row, wrap);
             &:hover{
                 box-shadow: 0 0 15px;
                 transition: $transition;
@@ -288,10 +297,7 @@ header{
                 flex: 0 0 45%;
                 
                 img{
-                    width: 100%; 
-                    height: 30vh;
-                    background-position: center;
-                    background-size: cover
+                    @include img(25vh, 100%);
                 }
             }
             
@@ -305,10 +311,9 @@ header{
 .services{
     padding: $padding;
     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
+    @include img(70vh, 100%);
     color: $white;
+
     @media(max-width:768px){
         height: 100vh;
     }
@@ -318,6 +323,7 @@ header{
 
         article{
             flex: 0 0 45%;
+
             @media(max-width:768px){
                 flex: 0 0 100%;  
             }
@@ -381,6 +387,7 @@ header{
 
         &:first-child{
             @include btn(1px solid $secondary, $lightgray);
+
             &:hover{
                 border: 1px solid $white;
             }
@@ -389,8 +396,10 @@ header{
         &:nth-child(2){
             @include btn(1px solid $white, $white);
         }
+
         &:nth-child(3){
             @include btn(1px solid $tertiary, $white);
+
             &:hover{
                 background-color: $tertiary;
                 color: $white
