@@ -21,3 +21,12 @@
     flex-wrap: $wrap;
     
 }
+
+@mixin img ($height, $width,) {
+    width: $width;
+    height: $height;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
