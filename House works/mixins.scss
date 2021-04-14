@@ -1,33 +1,16 @@
-@mixin btn {
+@mixin btn ($border, $color) {
     background: none;
-    border: 2px solid $white;
-    color: $white;
-    padding: 20px 30px;
+    border: $border;
+    color: $color;
+    padding: 15px 30px;
     font-size: 1.2rem;
-    border-radius: 10px;
 
     &:hover{
         transition: $transition;
         background-color: $white;
         color: $primary;
         cursor: pointer;
-    
     }
-}
-
-@mixin btn1 {
-    background: none;
-    border: 2px solid $tertiary;
-    padding: 15px 30px;
-    color: $tertiary;
-    font-size: 1.2rem;
-    &:hover{
-        background-color: $tertiary;
-        color: $white;
-        transition: $transition;
-        cursor: pointer;
-    }
-    
 }
 
 @mixin flex($justify, $align, $direction, $wrap) {
