@@ -29,5 +29,21 @@
         background-color:$purple ;
         transition: $transition;
     }
-    
 }
+
+@mixin animation ($name, $duration, $mode) {
+    @keyframes #{$name} {
+      from
+      {
+          color: $purple;
+      }
+      to
+      {
+        color: $yellow; 
+      }
+    }
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-fill-mode: $mode;
+  
+  }
