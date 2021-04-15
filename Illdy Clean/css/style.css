@@ -208,4 +208,47 @@ SERVICES
       padding: 10px 0;
       font-size: 1.6rem; }
 
+/*-----------------------
+NEWS
+------------------------*/
+.news {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: #222f36;
+  color: #fff; }
+  .news h3 {
+    font-size: 2rem; }
+  .news .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .news .row article {
+      margin-top: 20px;
+      flex: 0 0 30%; }
+      @media (max-width: 768px) {
+        .news .row article {
+          flex: 0 0 100%; } }
+      .news .row article:hover {
+        transition-duration: 2s;
+        transform: rotateY(360deg); }
+      .news .row article img {
+        width: 100%; }
+      .news .row article .text {
+        background-color: #fff;
+        color: #444;
+        height: 270px;
+        overflow: auto; }
+        @media (max-width: 768px) {
+          .news .row article .text {
+            height: 200px; } }
+        .news .row article .text h4 {
+          font-size: 1.5rem;
+          padding: 10px 20px;
+          text-align: left; }
+        .news .row article .text p {
+          padding: 0px 20px;
+          text-align: left; }
+
 /*# sourceMappingURL=style.css.map */

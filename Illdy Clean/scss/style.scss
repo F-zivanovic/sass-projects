@@ -242,3 +242,63 @@ SERVICES
         }
     }
 }
+
+/*-----------------------
+NEWS
+------------------------*/
+.news
+{
+    text-align: center;
+    padding: $padding;
+    background-color: $background;
+    color: $white;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .row{
+        @include flex(space-between, center, row, wrap);
+        // margin-top: 20px;
+        article
+        {
+            margin-top: 20px;
+            flex: 0 0 30%;
+
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            &:hover{
+                transition-duration: 2s;
+                transform: rotateY(360deg);
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .text{
+                background-color: $white;
+                color: $gray;
+                height: 270px;
+                overflow: auto;
+
+                @media(max-width:768px){
+                    height: 200px;
+                }
+
+                h4 {
+                    font-size: 1.5rem;
+                    padding: 10px 20px;
+                    text-align: left;   
+                }
+
+                p{
+                    padding: 0px 20px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
