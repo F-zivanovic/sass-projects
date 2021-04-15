@@ -305,4 +305,32 @@ TEAM
         font-size: 1.5rem;
         padding: 15px 0; }
 
+/*-----------------------
+FOOTER
+------------------------*/
+footer {
+  padding: 50px 0px;
+  background-color: #292825;
+  color: #fff; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    footer .container article {
+      flex: 0 0 30%;
+      margin-top: 20px; }
+      footer .container article h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-bottom: 10px; }
+      footer .container article ul li {
+        padding: 5px 0; }
+        footer .container article ul li a {
+          color: #fff; }
+          footer .container article ul li a:hover {
+            color: #6a4d8a; }
+
 /*# sourceMappingURL=style.css.map */
