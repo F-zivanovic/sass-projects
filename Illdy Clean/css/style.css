@@ -86,5 +86,27 @@ header {
       color: #f1d204; }
     header hgroup .btn-area {
       padding: 50px 0px; }
+      header hgroup .btn-area .btn {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        padding: 20px 30px;
+        border: 1px solid #fff;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin: 10px 10px 0px 0px; }
+        header hgroup .btn-area .btn:hover {
+          background-color: #6a4d8a;
+          transition: 0.4 ease; }
+      header hgroup .btn-area .btn1 {
+        background-color: #f1d204;
+        color: #fff;
+        padding: 20px 30px;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        margin: 10px 10px 0px 0px; }
+        header hgroup .btn-area .btn1:hover {
+          background-color: #6a4d8a;
+          transition: 0.4 ease; }
 
 /*# sourceMappingURL=style.css.map */

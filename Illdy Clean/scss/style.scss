@@ -44,3 +44,79 @@ a{
     width: 90%;
     margin: auto;
 }
+
+/*-----------------------
+HEADER
+------------------------*/
+header
+{
+    @include img(url(/img/front-page-header.jpg), 100%, 100vh);
+
+    @media(max-width:768px){
+        height: 90vh;
+    }
+
+    nav {
+        @include flex(space-between, center, row, wrap);
+        padding: 20px 50px;
+    
+        @media(max-width:768px){
+            flex-direction: column;
+            padding: 20px 15px;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                padding: 0 20px;
+
+                a  {
+                    color: $white;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+    
+    hgroup {
+        @include flex(center, center, column, nowrap);
+       height: 80vh;
+       color: $white;
+
+       @media(max-width:768px){
+        height: 60vh;
+       }
+
+       h1 {
+           font-size: 5rem;
+        //    @include animation1(animation1, 3s, forwards);
+
+           @media(max-width:768px){
+               font-size: 3.5rem;
+           }
+       }
+
+       span {
+           color: $yellow;
+        //    @include animation2(animation2, 3s, forwards);
+       }
+
+       .btn-area {
+           padding: $padding;
+
+            .btn{
+                @include btn(rgba(0, 0, 0, .2), 1px solid $white);
+            }
+
+            .btn1{
+                 @include btn($yellow, none);
+            }
+       }
+     
+    }
+}
