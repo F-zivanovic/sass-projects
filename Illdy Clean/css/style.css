@@ -78,7 +78,15 @@ header {
       header hgroup {
         height: 60vh; } }
     header hgroup h1 {
-      font-size: 5rem; }
+      font-size: 5rem;
+      animation-name: animation;
+      animation-duration: 3s;
+      animation-fill-mode: forwards; }
+@keyframes animation {
+  from {
+    color: #6a4d8a; }
+  to {
+    color: #f1d204; } }
       @media (max-width: 768px) {
         header hgroup h1 {
           font-size: 3.5rem; } }

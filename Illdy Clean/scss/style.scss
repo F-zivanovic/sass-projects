@@ -94,7 +94,7 @@ header
 
        h1 {
            font-size: 5rem;
-        //    @include animation1(animation1, 3s, forwards);
+           @include animation (animation, 3s, forwards);
 
            @media(max-width:768px){
                font-size: 3.5rem;
@@ -103,7 +103,6 @@ header
 
        span {
            color: $yellow;
-        //    @include animation2(animation2, 3s, forwards);
        }
 
        .btn-area {
