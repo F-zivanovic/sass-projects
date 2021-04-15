@@ -47,3 +47,15 @@
     animation-fill-mode: $mode;
   
   }
+
+
+  @mixin project-section ($bg) {
+    background-image: $bg;
+    background-position: center;
+    background-size: cover;
+
+    &:hover{
+        transition-duration: 1s;
+        transform: scale(1.1);
+    }   
+}
