@@ -302,3 +302,92 @@ NEWS
         }
     }
 }
+
+/*-----------------------
+TEAM
+------------------------*/
+.team
+{
+    padding: $padding;
+    text-align: center;
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+        margin-top: 40px;
+
+        article{
+            flex: 0 0 30%;
+
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            &:first-child{
+                 
+                p{
+                    color: $red;
+                    font-weight: bolder;
+                }
+
+                i{
+                    font-size: 2rem;
+                    padding: 20px 20px 0 0;
+                    color: $red;
+
+                    &:hover{
+                        transition-duration: 2s;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            &:nth-child(2){
+                 
+                p{
+                    color: $purple;
+                    font-weight: bolder;
+                }
+
+                i{
+                    font-size: 2rem;
+                    padding: 20px 20px 0 0;
+                    color: $purple;
+
+                    &:hover{
+                        transition-duration: 2s;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            
+            &:nth-child(3){
+                 
+                p{
+                    color: $yellow;
+                    font-weight: bolder;
+                }
+                
+                i{
+                    font-size: 2rem;
+                    padding: 20px 20px 0 0;
+                    color: $yellow;
+
+                    &:hover{
+                        transition-duration: 2s;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+
+            h4{
+                font-size: 1.5rem;
+                padding: 15px 0;
+            }
+           
+        }
+
+    }
+}
