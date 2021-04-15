@@ -121,7 +121,7 @@ header
 }
 
 /*-----------------------
-HEADER
+PROJECTS
 ------------------------*/
 .projects
 {
@@ -161,6 +161,84 @@ HEADER
 
         .img4{
             @include project-section(url(../img/front-page-project-2.png));
+        }
+    }
+}
+
+/*-----------------------
+SERVICES
+------------------------*/
+.services
+{
+    padding: $padding;
+    text-align: center;
+   
+    h3 {
+        font-size: 2rem;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+         margin-top: 40px;
+
+        article{
+            flex: 0 0 30%;
+            margin-top: 20px;
+
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+        }
+
+        article{
+
+            &:first-child{
+
+                i {
+                    color: $red;
+                    font-size: 2rem;
+                }
+
+                h4 {
+                    color: $red;
+                    padding: 10px 0;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        article
+        {
+            &:nth-child(2){
+
+                i {
+                    color: $yellow;
+                    font-size: 2rem;
+                }
+               
+                h4 {
+                    color: $yellow;
+                    padding: 10px 0;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        article
+        {
+            &:nth-child(3){
+
+                i {
+                    color: $purple;
+                    font-size: 2rem;
+                }
+
+                h4 {
+                    color: $purple;
+                    padding: 10px 0;
+                    font-size: 1.6rem;
+                }
+            }
         }
     }
 }
