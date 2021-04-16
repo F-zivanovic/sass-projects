@@ -279,4 +279,59 @@ header {
             transition: 0.4 ease;
             cursor: pointer; }
 
+/*---------------------------------
+    CONTACT
+-----------------------------------*/
+.contact {
+  padding: 50px 0px;
+  text-align: center;
+  background-color: #f9f9f9; }
+  .contact h2 {
+    font-size: 3rem; }
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .contact .container article {
+      flex: 0 0 45%; }
+      @media (max-width: 768px) {
+        .contact .container article {
+          flex: 0 0 100%; } }
+      .contact .container article h3 {
+        font-size: 2rem; }
+      .contact .container article input[type="text"] {
+        width: 90%;
+        height: 50px;
+        margin-top: 20px;
+        padding: 10px;
+        color: #171819;
+        font-size: 1rem; }
+      .contact .container article input[type="email"] {
+        width: 90%;
+        height: 50px;
+        margin-top: 20px;
+        padding: 10px;
+        color: #171819;
+        font-size: 1rem; }
+      .contact .container article textarea {
+        margin-top: 20px;
+        padding: 10px;
+        color: #171819;
+        font-size: 1rem;
+        width: 90%; }
+      .contact .container article input[type="submit"] {
+        width: 90%;
+        height: 50px;
+        background-color: black;
+        color: #ffffff;
+        font-size: 1rem; }
+        .contact .container article input[type="submit"]:hover {
+          background-color: #f13a11;
+          transition: 0.4 ease;
+          border: #f13a11; }
+      .contact .container article p {
+        padding: 20px 0px; }
+
 /*# sourceMappingURL=style.css.map */
