@@ -1,0 +1,55 @@
+/*---------------------------------
+    EXTERNAL FILES
+-----------------------------------*/
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/*---------------------------------
+    GOOGLE FONTS
+-----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+/*---------------------------------
+    UNIVERSAL STYLES
+-----------------------------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------
+    BASIC STYLES
+-----------------------------------*/
+body{
+    font-family: $text;
+    line-height: 1.5;
+    font-size: $fontSize;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $headings;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.container1{
+    width: 80%;
+    margin: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: $link;
+    &:hover{
+        transition: $transition;
+    }
+}
