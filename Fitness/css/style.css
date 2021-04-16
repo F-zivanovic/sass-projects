@@ -42,4 +42,45 @@ a {
   a:hover {
     transition: 0.4 ease; }
 
+/*---------------------------------
+    NAV
+-----------------------------------*/
+nav {
+  background-color: #171819; }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px 0px; }
+    @media (max-width: 768px) {
+      nav .container {
+        justify-content: center; } }
+    nav .container .logo {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 2px; }
+      nav .container .logo:hover {
+        color: #f13a11; }
+    nav .container ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      nav .container ul li {
+        padding: 0px 15px; }
+        @media (max-width: 768px) {
+          nav .container ul li {
+            padding: 0px 10px; } }
+        nav .container ul li a {
+          color: #ffffff;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 400; }
+          nav .container ul li a:hover {
+            color: #f13a11; }
+
 /*# sourceMappingURL=style.css.map */
