@@ -151,11 +151,79 @@ header{
 
                 &:last-child{
                     @include btn(none, 1px solid $primary, $primary);
-                    
+
                     &:hover{
                         color: $white;
                         transition: $transition;
                     }
+                }
+            }
+        }
+    }
+}
+
+/*---------------------------------
+    WORKS
+-----------------------------------*/
+.works{
+    padding: $padding;
+    background-color: $dark;
+    color: $white;
+
+    .container1{
+        @include flex(space-evenly, center, row, wrap);
+
+        article{
+
+            &:first-child{
+                flex: 0 0 45%;
+
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+
+                h3{
+                    font-size: 2rem;
+                }
+
+                span{
+                    display: block;
+                    padding: 10px 0px;
+                    font-size: 1.1rem;
+                }
+
+                p{
+                    padding: 20px 0px;
+                    color: $gray;
+                }
+
+                button{
+                    @include btn ($primary, none, $white);
+
+                    &:hover{
+                        background-color: $white;
+                        color: $primary;
+                        transition: $transition;
+                    }
+                }
+                
+            }
+
+            &:last-child{
+                flex: 0 0 45%;
+
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                    margin-top: 50px;
+                }
+
+                h3{
+                    font-size: 2rem;
+                }
+
+                p{
+                    padding: 10px 0px;
+                    font-weight: 700;
                 }
             }
         }
