@@ -66,7 +66,7 @@ nav{
     .container{
       @include flex(space-between, center, row, wrap);
       padding: 25px 0px;
-      
+
       @media(max-width:768px){
         justify-content: center;
     }
@@ -101,6 +101,63 @@ nav{
                 }
             }
         }
-    }
+    } 
+}
+
+/*---------------------------------
+    HEADER
+-----------------------------------*/
+
+header{
+
+    background-image:linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/hero-bg.jpg);
+    @include img(89vh, 100%);
+    // position: relative;
+
+    hgroup{
+        @include flex(center, center, column, wrap);
+        height: 70vh;
+        color: $white;
+        text-align: center;
     
+        span{
+            color: $gray;
+            font-size: 1.3rem;
+        }
+
+        h1{
+            font-size: 3rem;
+            padding: 10px 0px;
+
+            @media(max-width:768px){
+                font-size: 2rem;
+            }
+            
+        }
+
+        .buttons{
+
+            button{
+
+                &:first-child{
+                    @include btn($dark, none, $white);
+
+                    &:hover{
+                        transition: $transition;
+                        color: $primary;
+                        background-color: $dark;
+                    }
+                }
+
+                &:last-child{
+                    @include btn(none, 1px solid $primary, $primary);
+                    
+                    &:hover{
+                        color: $white;
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+    }
 }
