@@ -30,3 +30,99 @@ body{
 ul{
     list-style-type: none;
 }
+
+/*---------------------------------
+    NAV
+-----------------------------------*/
+nav{
+    background-color: $primary;
+    padding: 20px;
+    @include flex(space-between, center,row, wrap);
+
+    article{
+        flex: 0 0 30%;
+        
+        &:nth-child(1){
+           @include flex(flex-start, center, row, wrap);
+
+            @media(max-width:768px){
+                flex-direction: column;
+            }
+            
+            img{
+                width: 80px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $white;
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-left: 20px;
+
+                &:hover{
+                    transition: $transition;
+                    color: $lightgray;
+                }
+            }
+
+        }
+
+        &:nth-child(2){
+            color: $white;
+            font-size: 0.9rem;
+            @include flex(space-around, center, row, wrap);
+
+            @media(max-width:768px){
+                flex-direction: column;
+            }
+        }
+
+        &:nth-child(3){
+            @include flex(flex-end, center, row, wrap);
+    
+            button{
+             @include btn(1px solid $white, $white);
+            }
+        }
+    }
+}
+
+/*---------------------------------
+    HEADER
+-----------------------------------*/
+header{
+    @include img(80vh, 100%);
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/header.jpg); 
+    @include flex(center, center, column, wrap);
+    color: $white;
+
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .btn{
+        @include flex(space-betweens, center, row, wrap);
+
+        button{
+            
+            &:first-child{
+                @include btn(1px solid $tertiary, $white);
+                margin-right: 10px;
+
+                &:hover{
+                    border: none;
+                }
+            }
+
+            &:last-child{
+               @include btn(1px solid $white, $white);
+            }
+        }
+    }
+
+}
