@@ -1,0 +1,32 @@
+@mixin btn ($border, $color) {
+    background: none;
+    border: $border;
+    color: $color;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+
+    &:hover{
+        transition: $transition;
+        background-color: $white;
+        color: $primary;
+        cursor: pointer;
+    }
+}
+
+@mixin flex($justify, $align, $direction, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    
+}
+
+@mixin img ($height, $width,) {
+    width: $width;
+    height: $height;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
