@@ -41,7 +41,7 @@ nav{
 
     article{
         flex: 0 0 30%;
-        
+
         &:nth-child(1){
            @include flex(flex-start, center, row, wrap);
 
@@ -124,5 +124,125 @@ header{
             }
         }
     }
+}
 
+/*---------------------------------
+   PRICE
+-----------------------------------*/
+.price{
+    padding: $padding;
+    @include flex(center, center, row, wrap);
+    
+    article{
+        flex: 1;
+        border: 1px solid $lightgray;
+        text-align: center;
+        padding: 30px;
+
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            background: $white;
+            transition-duration: .2s;
+        }
+
+        h2{
+            font-size: 1.6rem;
+        }
+
+        p{
+            padding: 30px 0px;
+        }
+
+        .drugi{
+            font-size: 4rem;
+            color: $darkblue;
+            padding: 20px 0px;
+        }
+
+        button{
+           @include btn(1px solid $tertiary, $tertiary);
+
+           &:hover{
+            background-color: $tertiary;
+            color: $white
+           }
+        }
+    }
+}
+
+/*---------------------------------
+    ADVANTAGES
+-----------------------------------*/
+.advantages{
+    @include img(90vh, 100%);
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
+    padding: $padding;
+    text-align: center;
+
+    @media(max-width:768px){
+        height: 250vh;
+    }
+
+    h2{
+        color: $white;
+        font-size: 3.5rem;
+        letter-spacing: 1.8px;
+    }
+    .line{
+        display: block;
+        content: "";
+        background-color: $secondary;
+        height: 4px;
+        margin: 10px auto;
+        width: 150px;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+        margin-top: 50px;
+
+        article{
+            flex: 0 0 30%;
+            background-color: $white;
+            border: 2px solid $white;
+            border-radius: 10px;
+
+            @media(max-width:768px){
+                flex: 0 0 100%;
+                margin-top: 20px;
+            }
+
+            img{
+                width: 100%; 
+            }
+            h4{
+                padding: 20px;
+                text-align: left;
+                font-size: 1.7rem;
+                font-weight: 300;
+            }
+
+            p{
+                text-align: left;
+                font-weight: 300;
+                padding: 0px 20px;
+            }
+
+            button{
+                @include btn(1px solid $tertiary, $tertiary);
+                margin: 20px 0px;
+
+                &:hover{
+                   
+                    background-color: $tertiary;
+                    color: $white
+                }
+               
+            }
+        }
+    }
 }
