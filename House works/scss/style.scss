@@ -93,7 +93,7 @@ nav{
 -----------------------------------*/
 header{
     @include img(80vh, 100%);
-    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/header.jpg); 
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/header.jpg); 
     @include flex(center, center, column, wrap);
     color: $white;
 
@@ -179,7 +179,7 @@ header{
 -----------------------------------*/
 .advantages{
     @include img(90vh, 100%);
-    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/bg2.jpg);
     padding: $padding;
     text-align: center;
 
@@ -240,8 +240,115 @@ header{
                    
                     background-color: $tertiary;
                     color: $white
+                }   
+            }
+        }
+    }
+}
+
+/*---------------------------------
+    TEAM
+-----------------------------------*/
+.team{
+    padding: $padding;
+    text-align: center;
+
+    h2{
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            @include flex(space-between, center, row, wrap);
+            flex: 0 0 45%;
+            margin-top: 70px;
+            height: 25vh;
+            overflow: hidden;
+           
+
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            &:hover{
+                box-shadow: 0 0 15px;
+                transition: $transition;
+            }
+
+            .text{
+                flex:0 0 45%;
+                text-align: left;
+                padding: 20px 0px 20px 20px;;
+
+                h4{
+                    font-size: 1.6rem;
                 }
-               
+                p{
+                    padding-top: 20px;
+                }
+            }
+
+            .images{
+                flex: 0 0 45%;
+                
+                img{
+                    @include img(25vh, 100%);
+                }
+            }          
+        }
+    }
+}
+
+/*---------------------------------
+    SERVICES
+-----------------------------------*/
+.services{
+    padding: $padding;
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
+    @include img(70vh, 100%);
+    color: $white;
+
+    @media(max-width:768px){
+        height: 100vh;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            flex: 0 0 45%;
+
+            @media(max-width:768px){
+                flex: 0 0 100%;  
+            }
+
+            h3{
+                font-size: 2rem;
+                font-weight: 400;
+                padding: 20px 0px;
+            }
+
+            button{
+                @include btn(1px solid $white, $white);
+                margin-top: 20px;
+            }
+
+            h5{
+                font-size: 1.6rem;
+            }
+
+            &:first-child{
+                text-align: center;
+                border: 2px solid $white;
+                padding: 30px;
+
+                p{
+                   margin: 20px 0px;
+                }
             }
         }
     }
