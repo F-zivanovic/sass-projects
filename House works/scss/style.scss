@@ -308,7 +308,7 @@ header{
 -----------------------------------*/
 .services{
     padding: $padding;
-    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/bg2.jpg);
     @include img(70vh, 100%);
     color: $white;
 
@@ -350,6 +350,58 @@ header{
                    margin: 20px 0px;
                 }
             }
+        }
+    }
+}
+
+/*---------------------------------
+    ABOUT
+-----------------------------------*/
+.about{
+    padding: $padding;
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            flex: 0 0 30%;
+
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+/*---------------------------------
+    CONTACT
+-----------------------------------*/
+.contact{
+    padding: $padding;
+    text-align: center;
+    background-color: $primary;
+
+    button{
+
+        &:first-child{
+            @include btn(1px solid $secondary, $lightgray);
+
+            &:hover{
+                border: 1px solid $white;
+            }
+        }
+
+        &:nth-child(2){
+            @include btn(1px solid $white, $white);
+        }
+
+        &:nth-child(3){
+            @include btn(1px solid $tertiary, $white);
+
+            &:hover{
+                background-color: $tertiary;
+                color: $white
+             }
         }
     }
 }

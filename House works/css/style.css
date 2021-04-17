@@ -305,7 +305,7 @@ header {
 -----------------------------------*/
 .services {
   padding: 60px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg2.jpg);
   width: 100%;
   height: 70vh;
   background-position: center;
@@ -350,5 +350,67 @@ header {
         padding: 30px; }
         .services .container article:first-child p {
           margin: 20px 0px; }
+
+/*---------------------------------
+    ABOUT
+-----------------------------------*/
+.about {
+  padding: 60px 0; }
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .about .container article {
+      flex: 0 0 30%; }
+      .about .container article h2 {
+        font-size: 2.5rem; }
+
+/*---------------------------------
+    CONTACT
+-----------------------------------*/
+.contact {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #313131; }
+  .contact button:first-child {
+    background: none;
+    border: 1px solid #fde21c;
+    color: #d3d3d3;
+    padding: 15px 30px;
+    font-size: 1.2rem; }
+    .contact button:first-child:hover {
+      transition: 0.4s ease;
+      background-color: #fff;
+      color: #313131;
+      cursor: pointer; }
+    .contact button:first-child:hover {
+      border: 1px solid #fff; }
+  .contact button:nth-child(2) {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem; }
+    .contact button:nth-child(2):hover {
+      transition: 0.4s ease;
+      background-color: #fff;
+      color: #313131;
+      cursor: pointer; }
+  .contact button:nth-child(3) {
+    background: none;
+    border: 1px solid #506df5;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem; }
+    .contact button:nth-child(3):hover {
+      transition: 0.4s ease;
+      background-color: #fff;
+      color: #313131;
+      cursor: pointer; }
+    .contact button:nth-child(3):hover {
+      background-color: #506df5;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
