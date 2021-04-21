@@ -198,3 +198,111 @@ TOP PLACES
     }
 
 }
+/*********************
+CONTINENTS
+*********************/
+.continents{
+
+    background-color: $lighBlue;
+
+    ul{
+        display: flex;
+
+        li{
+            flex: 1;
+            align-items: center;
+            &:hover{
+                background-color: $pink;
+                transition: .4 ease;
+                transition-duration: 2s;
+            }
+
+            a{
+                img{
+                    padding: 40px 0;
+                    width: 90%;
+                    
+                }
+            }
+        }
+    }
+}
+  
+/*********************
+HOTELS
+*********************/
+.hotels{
+    padding: $padding;
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        article{
+            &:first-child{
+                flex: 0 0 30%;
+                @include image(url(img/tm-img-01.jpg), 30vh, 100%);
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+            }
+
+            &:nth-child(2){
+                flex: 0 0 50%;
+                border: 3px solid $gray;
+                padding-left: 50px;
+                padding-top: 50px;
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+
+                h3{
+                    font-size: 1.5rem;
+                }
+                
+                span{
+                    padding: 20px 0px;
+                    color: red;
+                    text-transform: uppercase;
+                }
+            }
+
+            &:nth-child(3){
+                flex: 0 0 15%;
+                background-color: $lighBlue;
+                color: $white;
+                font-size: 2rem;
+                font-weight: 300;
+                @include flex (center, center, row, wrap);
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                    margin-top: 20px;
+                }
+            }
+
+            &:nth-child(4){
+                @include products1;
+                background-image: url(img/tm-img-02.jpg);
+            }
+            &:nth-child(5){
+                @include products2
+            }
+            &:nth-child(6){
+                @include products3
+            }
+            &:nth-child(7){
+                @include products1;
+                background-image: url(img/tm-img-03.jpg);
+            }
+            &:nth-child(8){
+                @include products2
+            }
+            &:nth-child(9){
+                @include products3
+            }
+        }
+
+
+    }
+}
