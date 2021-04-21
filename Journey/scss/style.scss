@@ -159,7 +159,7 @@ TOP PLACES
         article{
 
             &:first-child{
-                @include image(url(img/tm-img-01.jpg), 50vh, 100%);
+                @include image(url(../img/tm-img-01.jpg), 50vh, 100%);
                 flex: 0 0 50%;
                 @media(max-width:768px){
                     flex: 0 0 100%;
@@ -171,7 +171,7 @@ TOP PLACES
             }
 
             &:nth-child(3){
-                @include image (url(img/tm-img-03.jpg), 50vh, 100%);
+                @include image (url(../img/tm-img-03.jpg), 50vh, 100%);
                 flex: 0 0 50%;
                 @media(max-width:768px){
                 flex: 0 0 100%;
@@ -183,7 +183,7 @@ TOP PLACES
             }
 
             &:nth-child(5){
-                @include image (url(img/tm-img-06.jpg), 50vh, 100%);
+                @include image (url(../img/tm-img-06.jpg), 50vh, 100%);
                 flex: 0 0 50%;
                 @media(max-width:768px){
                 flex: 0 0 100%;
