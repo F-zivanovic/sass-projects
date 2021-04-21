@@ -242,7 +242,7 @@ HOTELS
         article{
             &:first-child{
                 flex: 0 0 30%;
-                @include image(url(img/tm-img-01.jpg), 30vh, 100%);
+                @include image(url(../img/tm-img-01.jpg), 30vh, 100%);
                 @media(max-width:768px){
                     flex: 0 0 100%;
                 }
@@ -283,7 +283,7 @@ HOTELS
 
             &:nth-child(4){
                 @include products1;
-                background-image: url(img/tm-img-02.jpg);
+                background-image: url(../img/tm-img-02.jpg);
             }
             &:nth-child(5){
                 @include products2
@@ -293,7 +293,7 @@ HOTELS
             }
             &:nth-child(7){
                 @include products1;
-                background-image: url(img/tm-img-03.jpg);
+                background-image: url(../img/tm-img-03.jpg);
             }
             &:nth-child(8){
                 @include products2
@@ -302,7 +302,18 @@ HOTELS
                 @include products3
             }
         }
-
-
     }
 }
+
+/*********************
+FOOTER
+*********************/
+footer
+{
+    background-color: $lighBlue;
+    padding: $padding;
+    text-align: center;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}  
