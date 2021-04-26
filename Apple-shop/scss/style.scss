@@ -1,0 +1,42 @@
+/*-----------------
+EXTERNAL FILES
+-----------------*/
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/*-----------------
+GOOGLE FONTS
+-----------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins:400,700&display=swap');
+
+/*-----------------
+DEFAULT STYLES
+-----------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.6;
+    font-size:$fSize;
+    font-family:$fontFamily;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        transition: $transition;
+    }
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
