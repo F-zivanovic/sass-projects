@@ -40,3 +40,35 @@ a{
     width: 90%;
     margin: auto;
 }
+
+/*-----------------
+NAV
+------------------*/
+nav{
+
+    padding: 10px 0px;
+    background: linear-gradient(to right, $purple, $yellow);
+
+    ul{
+      @include flex(center, center, row, nowrap);
+
+        li{
+            padding: 0px 25px;
+            @media(max-width:768px){
+                padding: 0px 10px;
+            }
+
+           a{
+            color: $white;
+            text-transform: uppercase;
+            &:hover{
+                color: $purple;
+            }
+
+             i{
+                    font-size: 1.5rem;
+                }
+           }  
+        }
+    }
+}

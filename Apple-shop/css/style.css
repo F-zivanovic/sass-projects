@@ -30,4 +30,29 @@ a {
   width: 90%;
   margin: auto; }
 
+/*-----------------
+NAV
+------------------*/
+nav {
+  padding: 10px 0px;
+  background: linear-gradient(to right, #6e2594, #ecd444); }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    nav ul li {
+      padding: 0px 25px; }
+      @media (max-width: 768px) {
+        nav ul li {
+          padding: 0px 10px; } }
+      nav ul li a {
+        color: #fff;
+        text-transform: uppercase; }
+        nav ul li a:hover {
+          color: #6e2594; }
+        nav ul li a i {
+          font-size: 1.5rem; }
+
 /*# sourceMappingURL=style.css.map */
