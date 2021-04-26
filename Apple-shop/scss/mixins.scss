@@ -23,3 +23,12 @@
     font-size: 1.2rem;
     border-radius: 10px;
 }
+
+@mixin input {
+    border: none;
+    background-color: $yellow;
+    width: 300px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    color: $gray1;
+}
