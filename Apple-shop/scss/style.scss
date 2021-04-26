@@ -208,8 +208,30 @@ PRODUCTS
 
          &:nth-child(4){
             @include img(url("../img/ipad.jpg"), 100%, 40vh);
-         }
-
-       
+         } 
     }
+}
+
+/*-----------------
+CONTACT
+------------------*/
+.contact{
+
+    @include img(url("../img/iphone.jpg"), 100%, 40vh);
+
+     h2{
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 20px 0px;
+     }
+
+     form{
+         text-align: center;
+
+         input[type="text"]{
+             @include input;
+         }
+     }
+  
 }
