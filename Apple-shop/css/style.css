@@ -66,9 +66,10 @@ header {
   background-repeat: no-repeat; }
   header hgroup {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     height: 80vh;
     color: #6e2594; }
     header hgroup h1 {
