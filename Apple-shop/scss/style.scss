@@ -41,6 +41,15 @@ a{
     margin: auto;
 }
 
+.line{
+    display: block;
+    content: "";
+    margin: 10px 0px;
+    height: 4px;
+    width: 100px;
+    background: $gray3;
+}
+
 /*-----------------
 NAV
 ------------------*/
@@ -159,5 +168,48 @@ ABOUT
             }
             margin-top: 20px;
         }
+    }
+}
+
+/*-----------------
+PRODUCTS
+------------------*/
+
+.products{
+   
+    display: flex;
+    flex-wrap: wrap;
+
+    article{
+
+        flex: 0 0 50%;
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+
+        h2{
+            &::after{
+                @extend .line;
+            }
+        }
+
+        &:first-child{
+            @include img(url("../img/mac.jpg"), 100%, 40vh);
+        }
+
+        &:nth-child(2){
+           padding: 50px;
+        }
+
+        &:nth-child(3){
+            padding: 50px;
+            
+         }
+
+         &:nth-child(4){
+            @include img(url("../img/ipad.jpg"), 100%, 40vh);
+         }
+
+       
     }
 }

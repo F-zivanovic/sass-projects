@@ -30,6 +30,14 @@ a {
   width: 90%;
   margin: auto; }
 
+.line, .products article h2::after {
+  display: block;
+  content: "";
+  margin: 10px 0px;
+  height: 4px;
+  width: 100px;
+  background: #4b4d5e; }
+
 /*-----------------
 NAV
 ------------------*/
@@ -134,5 +142,35 @@ ABOUT
         background: #ecd444;
         color: #4e5062;
         transition: 0.4s ease; }
+
+/*-----------------
+PRODUCTS
+------------------*/
+.products {
+  display: flex;
+  flex-wrap: wrap; }
+  .products article {
+    flex: 0 0 50%; }
+    @media (max-width: 768px) {
+      .products article {
+        flex: 0 0 100%; } }
+    .products article:first-child {
+      background-image: url("../img/mac.jpg");
+      width: 100%;
+      height: 40vh;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .products article:nth-child(2) {
+      padding: 50px; }
+    .products article:nth-child(3) {
+      padding: 50px; }
+    .products article:nth-child(4) {
+      background-image: url("../img/ipad.jpg");
+      width: 100%;
+      height: 40vh;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
