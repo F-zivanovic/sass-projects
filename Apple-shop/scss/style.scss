@@ -48,6 +48,8 @@ nav{
 
     padding: 10px 0px;
     background: linear-gradient(to right, $purple, $yellow);
+    position: fixed;
+    width: 100%;
 
     ul{
       @include flex(center, center, row, nowrap);
@@ -107,4 +109,55 @@ header{
             }
         }
     }   
+}
+
+/*-----------------
+ABOUT
+------------------*/
+.about{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    article{
+        padding: 40px;
+        flex: 0 0 50%;
+        color: $white;
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+
+        &:first-child{
+            background-color: $gray1;
+        }
+        &:nth-child(2){
+            background-color: $gray2;
+        }
+        &:nth-child(3){
+            background-color: $gray3;
+        }
+        &:nth-child(4){
+            background-color: $gray4;
+        }
+        
+        i{
+            color: $yellow;
+            font-size: 2.4rem;
+        }
+
+        h3{
+            font-size: 1.6rem;
+            padding: 10px 0px;
+        }
+
+        button{
+            @include btn (1px solid $yellow, none, $yellow);
+            &:hover{
+                background: $yellow;
+                color: $gray2;
+                transition: $transition;
+            }
+            margin-top: 20px;
+        }
+    }
 }

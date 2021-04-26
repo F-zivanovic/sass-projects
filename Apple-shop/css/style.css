@@ -35,7 +35,9 @@ NAV
 ------------------*/
 nav {
   padding: 10px 0px;
-  background: linear-gradient(to right, #6e2594, #ecd444); }
+  background: linear-gradient(to right, #6e2594, #ecd444);
+  position: fixed;
+  width: 100%; }
   nav ul {
     display: flex;
     justify-content: center;
@@ -91,6 +93,46 @@ header {
       border-radius: 10px; }
       header hgroup button:hover {
         background: #ecd444;
+        transition: 0.4s ease; }
+
+/*-----------------
+ABOUT
+------------------*/
+.about {
+  display: flex;
+  flex-wrap: wrap; }
+  .about article {
+    padding: 40px;
+    flex: 0 0 50%;
+    color: #fff; }
+    @media (max-width: 768px) {
+      .about article {
+        flex: 0 0 100%; } }
+    .about article:first-child {
+      background-color: #515365; }
+    .about article:nth-child(2) {
+      background-color: #4e5062; }
+    .about article:nth-child(3) {
+      background-color: #4b4d5e; }
+    .about article:nth-child(4) {
+      background-color: #484a5a; }
+    .about article i {
+      color: #ecd444;
+      font-size: 2.4rem; }
+    .about article h3 {
+      font-size: 1.6rem;
+      padding: 10px 0px; }
+    .about article button {
+      border: 1px solid #ecd444;
+      background: none;
+      padding: 15px 20px;
+      color: #ecd444;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      margin-top: 20px; }
+      .about article button:hover {
+        background: #ecd444;
+        color: #4e5062;
         transition: 0.4s ease; }
 
 /*# sourceMappingURL=style.css.map */
