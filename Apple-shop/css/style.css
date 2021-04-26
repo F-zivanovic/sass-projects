@@ -30,13 +30,13 @@ a {
   width: 90%;
   margin: auto; }
 
-.line, .products article h2::after {
+.line, .products article h2::after, footer article h2:after {
   display: block;
   content: "";
   margin: 10px 0px;
   height: 4px;
   width: 100px;
-  background: #4b4d5e; }
+  background: #ecd444; }
 
 /*-----------------
 NAV
@@ -197,5 +197,35 @@ CONTACT
       padding: 15px 20px;
       margin-top: 20px;
       color: #515365; }
+
+/*-----------------
+FOOTER
+------------------*/
+footer {
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap; }
+  footer article {
+    padding: 50px;
+    flex: 0 0 50%; }
+    @media (max-width: 768px) {
+      footer article {
+        flex: 0 0 100%; } }
+    footer article h2 {
+      font-size: 1.7rem; }
+    footer article:first-child p {
+      padding: 20px 0px; }
+    footer article:first-child button {
+      border: 1px solid #ecd444;
+      background: none;
+      padding: 15px 20px;
+      color: #ecd444;
+      font-size: 1.2rem;
+      border-radius: 10px; }
+      footer article:first-child button:hover {
+        background: #ecd444;
+        transition: 0.4s ease;
+        color: #4e5062; }
 
 /*# sourceMappingURL=style.css.map */

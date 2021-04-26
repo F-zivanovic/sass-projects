@@ -47,7 +47,7 @@ a{
     margin: 10px 0px;
     height: 4px;
     width: 100px;
-    background: $gray3;
+    background: $yellow;
 }
 
 /*-----------------
@@ -233,5 +233,47 @@ CONTACT
              @include input;
          }
      }
-  
+}
+
+/*-----------------
+FOOTER
+------------------*/
+footer{
+
+    background-color: $text;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+
+    article{
+        padding: $padding;
+        flex: 0 0 50%;
+    
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+
+        h2{
+            font-size: 1.7rem;
+            &:after{
+                @extend .line;
+            }
+        }
+
+        &:first-child{
+           
+            p{
+                padding: 20px 0px;
+            }
+
+            button{
+                @include btn (1px solid $yellow, none, $yellow);
+                &:hover{
+                    background: $yellow;
+                    transition: $transition;
+                    color: $gray2;
+                }
+            }
+        }
+    }
 }
