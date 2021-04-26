@@ -48,11 +48,48 @@ nav {
         nav ul li {
           padding: 0px 10px; } }
       nav ul li a {
-        color: #fff;
-        text-transform: uppercase; }
+        color: #fff; }
         nav ul li a:hover {
           color: #6e2594; }
         nav ul li a i {
           font-size: 1.5rem; }
+
+/*-----------------
+HEADER
+------------------*/
+header {
+  background-image: url("/img/header3.jpg");
+  width: 100%;
+  height: 94vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  header hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: #6e2594; }
+    header hgroup h1 {
+      font-size: 3rem; }
+      header hgroup h1::first-letter {
+        color: #ecd444; }
+    header hgroup h3 {
+      font-size: 2rem;
+      padding: 10px 0px;
+      font-style: italic;
+      letter-spacing: 2px;
+      color: #ecd444; }
+    header hgroup button {
+      border: none;
+      background: #fff;
+      padding: 15px 20px;
+      color: #6e2594;
+      font-size: 1.2rem;
+      border-radius: 10px; }
+      header hgroup button:hover {
+        background: #ecd444;
+        transition: 0.4s ease; }
 
 /*# sourceMappingURL=style.css.map */

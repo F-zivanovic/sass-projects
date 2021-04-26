@@ -60,7 +60,6 @@ nav{
 
            a{
             color: $white;
-            text-transform: uppercase;
             &:hover{
                 color: $purple;
             }
@@ -71,4 +70,49 @@ nav{
            }  
         }
     }
+}
+
+/*-----------------
+HEADER
+------------------*/
+header{
+
+    @include img(url('/img/header3.jpg'), 100%, 94vh);
+    
+
+    hgroup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        color: $purple;
+
+        h1{
+            font-size: 3rem;
+            &::first-letter{
+                color: $yellow;
+            }   
+        }
+        h3{
+            font-size: 2rem;
+            padding: 10px 0px;
+            font-style: italic;
+            letter-spacing: 2px;
+            color: $yellow
+        }
+
+        button{
+            @include btn (none, $white, $purple);
+            &:hover{
+                background: $yellow;
+                transition: $transition;
+            }
+        }
+
+    }
+    
+    
+
+   
 }
