@@ -14,3 +14,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@mixin btn ($border, $bg, $color){
+    border: $border;
+    background: $bg;
+    padding: 15px 20px;
+    color: $color;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
