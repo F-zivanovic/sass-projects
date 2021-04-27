@@ -1,0 +1,42 @@
+/*---------------------------------
+    MIXINS
+-----------------------------------*/
+@mixin btn {
+    background-color: $red;
+    color: $white;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1.2rem;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $gray;
+        transition: $transition;
+    }
+    
+}
+
+@mixin flex ($justify, $align, $direction, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    
+}
+
+@mixin  img ($bg, $width, $height) {
+    background-image: $bg;
+    background-position: center;
+    background-size: cover;
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    
+}
+
+@mixin grid ($bg) {
+    background-image: $bg;
+    background-position: center;
+    background-size: cover;
+}
