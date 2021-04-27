@@ -188,14 +188,48 @@ ABOUT
             @include btn;
             margin-top: 20px;
         }
-
-      
     }
 
 }
 /*--------------------
 NUMBERS
 ---------------------*/
+.numbers
+{
+    @include img (url("../img/section8.jpg"), 100%, auto);
+    @include flex(space-between, center, row, wrap);
+
+
+  article{
+      padding: $padding;
+      flex: 0 0 22%;
+      text-align: center;
+
+      @media(max-width:768px){
+          flex: 0 0 100%;
+      }
+
+      span{
+
+          &:first-child{
+              color: $red;
+              font-size: 3rem;
+              font-style: italic;
+              font-weight: 700;
+          }
+      }
+
+      p{
+          font-weight: 700;
+      }
+
+      h4{
+          padding: 10px 0;
+          font-size: 1.4rem;
+      }
+  }  
+
+}
 
 /*--------------------
 PRODUCTS
