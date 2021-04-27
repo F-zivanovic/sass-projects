@@ -35,7 +35,7 @@ a {
   a:hover {
     transition: 0.4 ease; }
 
-.line {
+.line, .about article:first-child p:first-child::after {
   content: "";
   display: block;
   background-color: red;
@@ -132,6 +132,46 @@ header {
 /*--------------------
 ABOUT
 ---------------------*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .about article {
+    flex: 0 0 50%; }
+    @media (max-width: 768px) {
+      .about article {
+        flex: 0 0 100%; } }
+    .about article:first-child {
+      padding: 100px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      .about article:first-child p:first-child {
+        color: red;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2rem; }
+    .about article:last-child img {
+      width: 100%; }
+    .about article h3 {
+      font-size: 1.5rem;
+      padding: 10px 0px; }
+    .about article button {
+      background-color: red;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      font-size: 1.2rem;
+      margin-top: 20px; }
+      .about article button:hover {
+        cursor: pointer;
+        background-color: #a7a7a7;
+        transition: 0.4 ease; }
+
 /*--------------------
 NUMBERS
 ---------------------*/

@@ -145,7 +145,54 @@ header{
 /*--------------------
 ABOUT
 ---------------------*/
+.about{
+    @include flex (center, center, row, wrap);
 
+    article{
+        flex: 0 0 50%;
+
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+
+        &:first-child{
+            padding: 100px 20px;
+            @include flex (center, flex-start, column, nowrap);
+
+            p{
+                &:first-child{
+                    color: $red;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    &::after{
+                        @extend .line;
+                    }
+                } 
+            }
+        }
+
+        &:last-child{
+            
+           img{
+               width: 100%;
+           }
+        }
+
+        h3{
+            font-size: 1.5rem;
+            padding: 10px 0px;
+        }
+
+        button{
+            @include btn;
+            margin-top: 20px;
+        }
+
+      
+    }
+
+}
 /*--------------------
 NUMBERS
 ---------------------*/
