@@ -289,6 +289,37 @@ PRODUCTS
 /*--------------------
 BACKGROUND
 ---------------------*/
+.background{
+
+    @include img(url("../img/three.jpg"), 100%, 60vh);
+
+    hgroup{
+        @include flex(center, flex-end, column, nowrap);
+        text-align: right;
+        height: 60vh;
+        padding-right: 50px;
+        color: $white;
+
+        P{
+            &:first-child{
+                color: $red;
+                font-size: 1.4rem;
+                font-weight: 700;
+            }
+        }
+
+        h3{
+            padding: 20px 0;
+            font-size: 2rem;
+        }
+
+        button{
+            @include btn;
+            margin-top: 20px;
+        }
+    }
+}
+
 
 /*--------------------
 GALLERY
