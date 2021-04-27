@@ -208,6 +208,43 @@ NUMBERS
 /*--------------------
 PRODUCTS
 ---------------------*/
+.products {
+  padding: 50px 20px;
+  text-align: center; }
+  .products span {
+    font-size: 1.4rem;
+    color: red; }
+  .products h1 {
+    font-size: 3rem;
+    padding: 20px 0; }
+  .products .row {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto; }
+    .products .row article {
+      padding: 10px 0;
+      flex: 0 0 30%; }
+      .products .row article:hover {
+        transform: rotate(360deg);
+        transition-duration: 2s; }
+      @media (max-width: 768px) {
+        .products .row article {
+          flex: 0 0 100%; } }
+      .products .row article:nth-child(2) {
+        box-shadow: 0 0 10px gray; }
+      .products .row article h4 {
+        font-size: 1.8rem; }
+      .products .row article ul {
+        text-align: center; }
+        .products .row article ul li {
+          font-size: 1.2rem;
+          padding: 10px 0; }
+
 /*--------------------
 BACKGROUND
 ---------------------*/

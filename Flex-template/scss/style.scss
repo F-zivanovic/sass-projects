@@ -234,6 +234,57 @@ NUMBERS
 /*--------------------
 PRODUCTS
 ---------------------*/
+.products{
+    padding: $padding;
+    text-align: center;
+
+    span{
+        font-size: 1.4rem;
+        color: $red;
+    }
+
+    h1{
+        font-size: 3rem;
+        padding: 20px 0;
+    }
+
+    .row{
+        padding: 50px 0px;
+        @include flex(space-evenly, center, row, wrap);
+        width: 90%;
+        margin: auto;
+
+        article{
+            padding: 10px 0;
+            flex: 0 0 30%;
+            &:hover{
+                transform:rotate(360deg);
+                transition-duration: 2s;
+            }
+
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            &:nth-child(2){
+                box-shadow: 0 0 10px gray;
+            }
+
+            h4{
+                font-size: 1.8rem;
+            }
+
+            ul{
+                text-align: center;
+                li{
+                    font-size: 1.2rem;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+
+}
 
 /*--------------------
 BACKGROUND
