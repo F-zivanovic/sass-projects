@@ -1,0 +1,48 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap');
+
+/*---------------------------------
+   EXTERNAL FILES
+-----------------------------------*/
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/*---------------------------------
+    DAFAULT STYLES
+-----------------------------------*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    line-height: 1.6;
+    font-size: $font;
+    font-family:'Open Sans', sans-serif;;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container
+{
+    width: 85%;
+    margin: auto;
+ 
+}
+ul
+{
+    list-style-type: none;
+}
+a 
+{
+    text-decoration: none;
+    &:hover{
+        transition: $transition;
+    }
+}
