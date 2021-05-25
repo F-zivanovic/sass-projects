@@ -31,8 +31,13 @@ h1,h2,h3,h4,h5,h6
 
 .container
 {
-    width: 85%;
+    width: 90%;
     margin: auto;
+
+    @media(max-width:768px){
+        width: 100%;
+        margin: auto;
+    }
  
 }
 ul
@@ -44,5 +49,104 @@ a
     text-decoration: none;
     &:hover{
         transition: $transition;
+    }
+}
+
+// NAVBAR
+nav{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    @include flex(space-between, center, row, wrap);
+    
+    @media(max-width:768px){
+        flex-direction: column;
+    }
+
+    .logo-group{
+
+        h3{
+            font-weight: 600;
+            color: $logo;
+            font-size: 1.4rem;
+        }
+
+        span{
+           color: $logo;
+           font-weight: 300;
+           font-size: 0.9rem;
+        }
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            padding: 0px 10px;
+
+            @media(max-width:768px){
+                padding: 0px 5px;
+            }
+
+            a{
+                color: $blue;
+                text-transform: uppercase;
+                font-weight: 600;
+
+                &:hover{
+                    color: $pink;
+                }
+            }
+        }
+    }
+}
+
+// HEADER
+header{
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.5)), url('../img/bg2.webp');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 89vh;
+
+    @media(max-width:768px){
+        background-position: center;
+    }
+
+
+    hgroup{
+        @include flex(center, flex-start, column, nowrap);
+     height: 80vh;
+     margin-left: 50px;
+
+     h1{
+         font-size: 3rem;
+         color: #fff;
+         font-weight: 400;
+
+         @media(max-width:768px){
+            font-size: 2.4rem;
+        }
+    
+     }
+
+     h3{
+         color: #fff;
+         font-weight: 400;
+         font-size: 1.6rem;
+     }
+
+     button{
+         @include btn($yellow, $blue);
+         margin-top: 10px;
+
+         &:hover{
+             background: #fff;
+             transition: $transition;
+            cursor: pointer;         }
+     }
+
     }
 }
