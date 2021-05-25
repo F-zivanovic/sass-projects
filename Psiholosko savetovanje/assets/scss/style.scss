@@ -34,10 +34,10 @@ h1,h2,h3,h4,h5,h6
     width: 90%;
     margin: auto;
 
-    @media(max-width:768px){
-        width: 100%;
-        margin: auto;
-    }
+    // @media(max-width:768px){
+    //     width: 100%;
+    //     margin: auto;
+    // }
  
 }
 ul
@@ -239,6 +239,125 @@ header{
           }
       }
   }
+}
 
+// CENO0VNIK
+.cenovnik{
+    padding: $padding;
 
+    h2{
+        text-align: center;
+        color: $blue;
+        font-size: 2.5rem;
+
+        &::after{
+            @include line;
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        article{
+            flex: 0 0 30%;
+            margin-top: 20px;
+
+            @media(max-width:768px){
+                flex: 0 0 100%;
+                margin-top: 60px;
+            }
+
+            .price{
+                width: 100%;
+                // height: 50%;
+                background: #a5d2d0;
+                text-align: center;
+                padding: 20px;
+                
+                h4{
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+
+                span{
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 100%;
+                    color: $pink; 
+                    font-size: 2rem;
+               }
+            
+            }
+
+            .price-text{
+                background: #f2f8f8;
+                padding: 20px;
+
+                 ul{
+                     li{
+                        padding: 5px 0px;
+                     }
+                 }
+            }
+
+            button{
+                @include btn($yellow, $blue);
+                margin-top: 10px;
+                &:hover{
+                    background-color: $blue;
+                    color: $pink;
+                    transition: $transition;
+                }
+            }
+        }
+    }
+}
+
+// CLIENTS
+.clients{
+    padding: $padding;
+    margin-top: 50px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.5)), url('../img/bg1.jpg');
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    @media(max-width:768px){
+        height: 120vh;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        article{
+            flex: 0 0 45%;
+            background-color: #fff;
+            padding: 40px;
+            color: #9c9fa4;
+            font-size: 1.4rem;
+            border-radius: 10px;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            h4{
+                color: $pink;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+// CONTACT
+.contact{
+    padding: $padding;
+
+    
 }
