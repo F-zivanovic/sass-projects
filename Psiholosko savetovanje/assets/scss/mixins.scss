@@ -16,3 +16,14 @@
     background-repeat: no-repeat;
     
 }
+
+@mixin btn($bg, $color) {
+    background: $bg;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    color: $color;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    
+}
