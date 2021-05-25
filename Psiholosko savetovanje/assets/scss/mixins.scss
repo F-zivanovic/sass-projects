@@ -27,3 +27,13 @@
     font-weight: 700;
     
 }
+
+@mixin line {
+    display: block;
+    content: "";
+    margin: 10px auto;
+    background: $yellow;
+    width: 100px;
+    height: 4px;
+    
+}
