@@ -6,9 +6,6 @@ GOOGLE FONTS
 /*********************
 EXTERNAL FILES
 *********************/
-/*********************
-DEFAULT STYLES
-*********************/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,9 +27,6 @@ a {
   a:hover {
     transition: 0.4 ease; }
 
-/*********************
-NAV
-*********************/
 nav {
   background-color: white;
   padding: 20px 50px;
@@ -75,9 +69,6 @@ nav {
       nav ul li .active {
         color: #69c6ba; }
 
-/*********************
-HEADER
-*********************/
 header {
   background-image: url(../img/banner.jpg);
   background-position: center;
@@ -116,9 +107,6 @@ header {
       transition: 0.4 ease;
       cursor: pointer; }
 
-/*********************
-ABOUT
-*********************/
 .about {
   padding: 50px 20px;
   text-align: center;
@@ -146,9 +134,6 @@ ABOUT
       transition: 0.4 ease;
       cursor: pointer; }
 
-/*********************
-TOP PLACES
-*********************/
 .places .row {
   display: flex;
   flex-wrap: wrap; }
@@ -297,9 +282,6 @@ TOP PLACES
         transition: 0.4 ease;
         cursor: pointer; }
 
-/*********************
-CONTINENTS
-*********************/
 .continents {
   background-color: #69c6ba; }
   .continents ul {
@@ -315,9 +297,6 @@ CONTINENTS
         padding: 40px 0;
         width: 90%; }
 
-/*********************
-HOTELS
-*********************/
 .hotels {
   padding: 50px 20px; }
   .hotels .row {
@@ -336,20 +315,6 @@ HOTELS
       @media (max-width: 768px) {
         .hotels .row article:nth-child(1) {
           flex: 0 0 100%; } }
-    .hotels .row article:nth-child(2) {
-      flex: 0 0 50%;
-      border: 3px solid #efefef;
-      padding-left: 50px;
-      padding-top: 50px; }
-      @media (max-width: 768px) {
-        .hotels .row article:nth-child(2) {
-          flex: 0 0 100%; } }
-      .hotels .row article:nth-child(2) h3 {
-        font-size: 1.5rem; }
-      .hotels .row article:nth-child(2) span {
-        padding: 20px 0px;
-        color: red;
-        text-transform: uppercase; }
     .hotels .row article:nth-child(3) {
       flex: 0 0 40%;
       background-image: url(../img/tm-img-02.jpg);
@@ -400,9 +365,6 @@ HOTELS
         transition: 0.4 ease;
         cursor: pointer; }
 
-/*********************
-FOOTER
-*********************/
 footer {
   background-color: #69c6ba;
   padding: 50px 20px;
