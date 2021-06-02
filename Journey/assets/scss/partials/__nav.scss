@@ -1,0 +1,51 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+nav{
+    background-color: $white;
+    padding: 20px 50px;
+    @include flex(space-between, center, row, wrap);
+    @media(max-width:768px){
+        flex-direction: column;
+    }
+
+    .logo{
+        @include flex(center, center, row, wrap);
+        text-transform: uppercase;
+
+        h1{
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 2rem;
+            @media(max-width:768px){
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            padding: 0 10px;
+            border-right: 2px solid $black;
+            @media(max-width:768px){
+                padding: 0 5px;
+            }
+
+            a{
+                color: $black;
+                text-transform: uppercase;
+                &:hover{
+                    color: $lighBlue;
+                    transition: $transition;
+                }
+            }
+
+            .active{
+                color: $lighBlue;
+            }
+        }
+    }
+}

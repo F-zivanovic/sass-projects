@@ -1,0 +1,62 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+.hotels{
+    padding: $padding;
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    
+        article{
+            &:nth-child(1){
+                flex: 0 0 40%;
+                 @include image(url(../img/tm-img-01.jpg), 40vh, 100%);
+                 @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+             }
+
+             &:nth-child(3){
+                flex: 0 0 40%;
+                 @include image(url(../img/tm-img-02.jpg), 40vh, 100%);
+                 @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+             }
+
+             &:nth-child(5){
+                flex: 0 0 40%;
+                 @include image(url(../img/tm-img-03.jpg), 40vh, 100%);
+                 @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+             }
+        }
+
+        .hotels-text{
+            flex: 0 0 55%;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            h3{
+              font-size: 1.5rem;
+            }
+                                
+             span{
+                padding: 20px 0px;
+                color: red;
+                text-transform: uppercase;
+            }
+        }
+
+        button{
+            @include btn;
+            margin-bottom: 20px;
+        }
+    }  
+}

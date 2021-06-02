@@ -1,0 +1,25 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+.about{
+    padding: $padding;
+    text-align: center;
+    background-color: $gray;
+
+    h1{
+        font-weight: 300;
+        font-size: 2rem;
+
+        span{
+            font-weight: 600;
+        }
+    }
+    p{
+        font-size: 0.8rem;
+    }
+
+    button{
+        @include btn;
+    }
+}

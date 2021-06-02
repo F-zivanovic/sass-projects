@@ -1,0 +1,26 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+header{
+    @include image (url(../img/banner.jpg), 80vh, 100%);
+    @include flex (center, center, column, wrap);
+    color: $white;
+
+    h1{
+        font-size: 3rem;
+        font-weight: 300;
+        text-shadow: 0 0 15px $black;
+    }
+
+    p{
+        font-weight: 100;
+        font-size: 1.4rem;
+        color: $black;
+        font-weight: 600;
+    }
+
+    button{
+        @include btn;
+    }
+}

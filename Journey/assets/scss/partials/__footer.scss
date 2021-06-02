@@ -1,0 +1,13 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+footer
+{
+    background-color: $lighBlue;
+    padding: $padding;
+    text-align: center;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}  

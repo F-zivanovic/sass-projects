@@ -1,0 +1,33 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    line-height: 1.5;
+    font-family: 'Roboto Mono', monospace;
+    font-size: $fSize;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        transition: $transition;
+    }
+}
