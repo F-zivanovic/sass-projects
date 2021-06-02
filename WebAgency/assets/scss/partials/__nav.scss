@@ -1,0 +1,48 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+
+nav
+{
+    background:linear-gradient(to right, $orange, $darkBlue);
+    padding-top: 10px;
+    padding: 5px 0;
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+        @media(max-width:768px){
+            flex-direction: column;
+        }
+
+        .logo{
+            color: $white;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            &:hover{
+                color: $lightGray;
+            }
+        }
+
+        ul{
+            display: flex;
+            li{
+                a{
+                    color: $white;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                    padding: 0 30px;
+                    @media(max-width:768px){
+                        padding: 0 10px;
+                    }
+                    &:hover{
+                        color: $lightGray;
+                    }
+                }
+            }
+        }
+    }
+}

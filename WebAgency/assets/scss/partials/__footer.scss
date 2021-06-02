@@ -1,0 +1,33 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+
+footer
+{
+    background-image:linear-gradient(to right,rgba(253, 127, 69, .8), rgba(29, 82, 124, .8)), url(../img/baloon.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 30vh;
+    padding: $padding;
+    text-align: center;
+
+    i{
+        font-size: 2rem;
+        color: $darkBlue;
+        padding-left: 20px;
+        &:hover{
+            color: $orange;
+            transition: $transition;
+            transform: rotate(360deg);
+            transition-duration: 1.4s;
+            cursor: pointer;
+        }
+    }
+    
+    p{
+        color: $white;
+        font-size: 1.4rem;
+        padding: 20px 0;
+        font-style: italic;
+    }
+}

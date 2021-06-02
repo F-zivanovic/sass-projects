@@ -1,0 +1,50 @@
+@import '../variables.scss';
+
+/*---------------------------------
+    DAFAULT STYLES
+-----------------------------------*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    line-height: 1.6;
+    font-size: $font;
+    font-family:'Open Sans', sans-serif;;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container
+{
+    width: 90%;
+    margin: auto;
+ 
+}
+ul
+{
+    list-style-type: none;
+}
+a 
+{
+    text-decoration: none;
+    &:hover{
+        transition: $transition;
+    }
+}
+
+.line
+{
+    display: block;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background: $orange;
+    margin: 10px 0;
+}

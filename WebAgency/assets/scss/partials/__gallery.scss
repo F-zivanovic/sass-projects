@@ -1,0 +1,52 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+
+.gallery
+{
+    text-align: center;
+    padding: 40px 0;
+
+    h1{
+        font-size: 2.5rem;
+        color: $darkBlue;
+        &::after{
+            @extend .line;
+            margin: 10px auto;
+        }
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+      
+        h4{
+            background:$orange;
+            display: inline;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1rem;
+            padding: 10px;
+            color: $white;
+        }
+       
+        .img1{
+            @include images(url(../img/works1.jpg));
+        }
+        .img2{
+            @include images(url(../img/works2.jpg));
+        }
+        .img3{
+            @include images(url(../img/works3.jpg));
+        }
+        .img4{
+            @include images(url(../img/works4.jpg));
+        }
+        .img5{
+            @include images(url(../img/works5.jpg));
+        }
+        .img6{
+            @include images(url(../img/works1.jpg));
+        }
+    }
+}

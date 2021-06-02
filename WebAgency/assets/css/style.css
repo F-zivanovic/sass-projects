@@ -1,7 +1,13 @@
+/*---------------------------------
+   GOOGLE FONTS
+-----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap");
 /*---------------------------------
-    EXTERNAL FILES
+   PARTIALS
 -----------------------------------*/
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 /* rgb(29, 82, 124) */
 /* rgb(69, 154, 211) */
 /* rgb(253, 127, 69) */
@@ -41,9 +47,9 @@ a {
   background: #fd7f45;
   margin: 10px 0; }
 
-/*---------------------------------
-   NAV
------------------------------------*/
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 nav {
   background: linear-gradient(to right, #fd7f45, #1d527c);
   padding-top: 10px;
@@ -79,6 +85,9 @@ nav {
         nav .container ul li a:hover {
           color: lightgray; }
 
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 /*---------------------------------
    HEADER
 -----------------------------------*/
@@ -87,13 +96,13 @@ header {
   background-size: cover;
   background-position: center;
   height: 94vh;
+  color: #fff;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  color: #fff;
-  text-align: center; }
+  flex-wrap: wrap; }
   @media (max-width: 768px) {
     header {
       height: 80vh; } }
@@ -125,9 +134,9 @@ header {
       background-color: #fff;
       color: #1d527c; }
 
-/*---------------------------------
-   ABOUT
------------------------------------*/
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 .about {
   display: flex;
   justify-content: center;
@@ -160,9 +169,9 @@ header {
       .about article:first-child p {
         padding-right: 50px; }
 
-/*---------------------------------
-   SERVICES
------------------------------------*/
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 .services {
   padding: 100px 40px;
   background-image: linear-gradient(rgba(29, 82, 124, 0.9), rgba(29, 82, 124, 0.9)), url(../img/header.jpg);
@@ -204,6 +213,9 @@ header {
       .services .container article p {
         margin-top: 30px; }
 
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 /*---------------------------------
    BLOG
 -----------------------------------*/
@@ -237,7 +249,7 @@ header {
             margin-top: 20px; } }
         .blog .container article img:hover {
           transform: scale(1.1);
-          transition-duration: .8s; }
+          transition-duration: .3s; }
       .blog .container article h3 {
         font-size: 2rem;
         margin: 10px 0; }
@@ -259,9 +271,9 @@ header {
           border-radius: 0px 20px 0px 20px;
           background-color: #459ad3; }
 
-/*---------------------------------
-   GALLERY
------------------------------------*/
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 .gallery {
   text-align: center;
   padding: 40px 0; }
@@ -376,9 +388,9 @@ header {
         transform: scale(1.1);
         transition-duration: 1.4s; }
 
-/*---------------------------------
-   FOOTER
------------------------------------*/
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
 footer {
   background-image: linear-gradient(to right, rgba(253, 127, 69, 0.8), rgba(29, 82, 124, 0.8)), url(../img/baloon.jpg);
   background-size: cover;
@@ -394,7 +406,8 @@ footer {
       color: #fd7f45;
       transition: 0.3s ease;
       transform: rotate(360deg);
-      transition-duration: 1.4s; }
+      transition-duration: 1.4s;
+      cursor: pointer; }
   footer p {
     color: #fff;
     font-size: 1.4rem;
