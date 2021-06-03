@@ -1,0 +1,28 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+
+footer{
+    padding: $padding;
+    border-top: 1px solid $gray;
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+        @media(max-width:768px){
+            flex-direction: column;
+            text-align: center;
+        }
+      
+        article{
+            flex: 0 0 50%;
+            @media(max-width:768px){
+               margin-top: 20px;
+            }
+
+            i{
+                color: $primary;
+                padding-left: 10px;
+            }
+        }
+    }
+}

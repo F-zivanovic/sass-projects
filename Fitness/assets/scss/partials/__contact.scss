@@ -1,0 +1,62 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+
+.contact{
+    padding: $padding;
+    text-align: center;
+    background-color: $aboutBgColor;
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            flex: 0 0 45%;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            h3{
+                font-size: 2rem;
+            }
+
+            input[type="text"]{
+             @include input;
+            }
+
+            input[type="email"]{
+             @include input;
+            }
+
+            textarea{
+                margin-top: 20px;
+                padding: 10px;
+                color: $dark;
+                font-size: 1rem;
+                width: 90%;
+            }
+
+            input[type="submit"]{
+                width: 90%;
+                height: 50px;
+                background-color: black;
+                color: $white;
+                font-size: 1rem;
+
+                &:hover{
+                    background-color: $primary;
+                    transition: $transition;
+                    border: $primary;
+                }
+            }
+
+            p{
+                padding: 20px 0px;
+            }
+        }
+    }
+}
