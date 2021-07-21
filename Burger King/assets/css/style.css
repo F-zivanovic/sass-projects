@@ -28,9 +28,115 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none; }
   a:hover {
-    transition: 0.4 ease; }
+    transition: all ease-in-out 0.3; }
 
 ul {
   list-style-type: none; }
+
+/*----------------------
+EXTERNAL FILES
+-----------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../assets/img/carousel-2.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  header nav {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      header nav {
+        text-align: center;
+        flex-direction: column; } }
+    header nav .logo {
+      font-size: 2rem; }
+      @media (max-width: 768px) {
+        header nav .logo {
+          font-size: 1.5rem; } }
+      header nav .logo h1 {
+        color: #fbaf32; }
+        header nav .logo h1 span {
+          color: #63850f; }
+          header nav .logo h1 span:hover {
+            transition: all ease-in-out 0.3;
+            color: #fbaf32; }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      header nav ul li {
+        padding: 0px 15px; }
+        @media (max-width: 768px) {
+          header nav ul li {
+            padding: 0px 5px; } }
+        header nav ul li a {
+          font-size: 1.1rem;
+          color: #fff;
+          font-weight: bold; }
+          header nav ul li a:hover {
+            transition: all ease-in-out 0.3;
+            color: #fbaf32; }
+        header nav ul li .active {
+          color: #fbaf32; }
+  header hgroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 80vh; }
+    header hgroup h1 {
+      font-size: 4rem;
+      color: #fff; }
+      @media (max-width: 768px) {
+        header hgroup h1 {
+          text-align: center;
+          font-size: 3rem; } }
+      header hgroup h1 span {
+        color: #fbaf32; }
+    header hgroup h5 {
+      color: #fff;
+      font-size: 1.3rem;
+      padding: 10px 0px; }
+      @media (max-width: 768px) {
+        header hgroup h5 {
+          text-align: center;
+          font-size: 1rem; } }
+    header hgroup .button-group button:first-child {
+      background-color: #fbaf32;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bolder;
+      border: none;
+      border: 1px solid #fbaf32; }
+      header hgroup .button-group button:first-child:hover {
+        transition: all ease-in-out 0.3;
+        background: none;
+        border: 1px solid #fbaf32;
+        color: #fbaf32; }
+    header hgroup .button-group button:last-child {
+      background-color: #63850f;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bolder;
+      border: none;
+      border: 1px solid #63850f; }
+      header hgroup .button-group button:last-child:hover {
+        transition: all ease-in-out 0.3;
+        background: none;
+        border: 1px solid #63850f;
+        color: #63850f; }
 
 /*# sourceMappingURL=style.css.map */
