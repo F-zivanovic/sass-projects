@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none; }
   a:hover {
-    transition: all ease-in-out 0.3; }
+    transition: 0.5s; }
 
 ul {
   list-style-type: none; }
@@ -64,7 +64,7 @@ header {
         header nav .logo h1 span {
           color: #63850f; }
           header nav .logo h1 span:hover {
-            transition: all ease-in-out 0.3;
+            transition: 0.5s;
             color: #fbaf32; }
     header nav ul {
       display: flex;
@@ -82,7 +82,7 @@ header {
           color: #fff;
           font-weight: bold; }
           header nav ul li a:hover {
-            transition: all ease-in-out 0.3;
+            transition: 0.5s;
             color: #fbaf32; }
         header nav ul li .active {
           color: #fbaf32; }
@@ -120,7 +120,7 @@ header {
       border: none;
       border: 1px solid #fbaf32; }
       header hgroup .button-group button:first-child:hover {
-        transition: all ease-in-out 0.3;
+        transition: 0.5s;
         background: none;
         border: 1px solid #fbaf32;
         color: #fbaf32; }
@@ -134,9 +134,60 @@ header {
       border: none;
       border: 1px solid #63850f; }
       header hgroup .button-group button:last-child:hover {
-        transition: all ease-in-out 0.3;
+        transition: 0.5s;
         background: none;
         border: 1px solid #63850f;
         color: #63850f; }
+
+/*----------------------
+EXTERNAL FILES
+-----------------------*/
+.about {
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .about article {
+    flex: 0 0 47%; }
+    @media (max-width: 768px) {
+      .about article {
+        flex: 0 0 100%; } }
+    .about article:first-child img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px; }
+    .about article:last-child h5 {
+      color: #63850f;
+      font-size: 1.4rem;
+      font-weight: 300; }
+      @media (max-width: 768px) {
+        .about article:last-child h5 {
+          margin-top: 10px;
+          font-size: 1rem; } }
+    .about article:last-child h3 {
+      font-size: 2.3rem;
+      padding: 10px 0px; }
+      @media (max-width: 768px) {
+        .about article:last-child h3 {
+          font-size: 1.8rem; } }
+    .about article:last-child p {
+      color: #454545; }
+    .about article:last-child button {
+      background-color: #fbaf32;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bolder;
+      border: none;
+      border: 1px solid #fbaf32;
+      margin-top: 10px; }
+      .about article:last-child button:hover {
+        transition: 0.5s;
+        background: none;
+        border: 1px solid #fbaf32;
+        color: #fbaf32; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+/*----------------------
+EXTERNAL FILES
+-----------------------*/
+@import '../variables.scss';
+@import '../mixins.scss';
+
+
+.about{
+    padding: $padding;
+    @include flex(space-between, center, row, wrap);
+
+    article{
+        flex: 0 0 47%;
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+
+        &:first-child{
+
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+
+        &:last-child{
+            
+            h5{
+                color: $green;
+                font-size: 1.4rem;
+                font-weight: 300;
+                @media(max-width:768px){
+                    margin-top: 10px;
+                    font-size: 1rem;
+                }
+            }
+
+            h3{
+                font-size: 2.3rem;
+                padding: 10px 0px;
+                @media(max-width:768px){
+                    font-size: 1.8rem;
+                }
+            }
+
+            p{
+                color: $gray;
+            }
+
+            button{
+                @include btn ($orange, $white, $orange);
+                margin-top: 10px;
+                &:hover{
+                    transition: $transition;
+                    background: none;
+                    border: 1px solid $orange;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
