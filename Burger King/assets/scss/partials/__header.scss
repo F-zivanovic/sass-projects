@@ -1,0 +1,121 @@
+/*----------------------
+EXTERNAL FILES
+-----------------------*/
+@import '../variables.scss';
+@import '../mixins.scss';
+
+
+header{
+    background-image:linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.6)), url("../../../assets/img/carousel-2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    nav{
+        padding: 20px 0px;
+        @include flex(space-between, center, row, wrap);
+        @media(max-width:768px){
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .logo{
+            font-size: 2rem;
+            @media(max-width:768px){
+                font-size: 1.5rem;
+            }
+
+            h1{
+                color: $orange;
+
+                span{
+                    color: $green;
+                    &:hover{
+                        transition: $transition;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+
+        ul{
+            @include flex (center, center, row, wrap);
+
+            li{
+                padding: 0px 15px;
+                @media(max-width:768px){
+                    padding: 0px 5px;
+                }
+
+                a{
+                    font-size: 1.1rem;
+                    color: $white;
+                    font-weight: bold;
+                    &:hover{
+                        transition: $transition;
+                        color: $orange;
+                    }
+                }
+
+                .active{
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    hgroup{
+        @include flex(center, center, column, nowrap);
+        height: 80vh;
+
+        h1{
+            font-size: 4rem;
+            color: $white;
+            @media(max-width:768px){
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            span{
+                color: $orange;
+            }
+        }
+
+        h5{
+            color: $white;
+            font-size: 1.3rem;
+            padding: 10px 0px;
+            @media(max-width:768px){
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+
+        .button-group{
+
+            button{
+                &:first-child{
+                    @include btn($orange, $white, $orange);
+                    &:hover{
+                        transition: $transition;
+                        background: none;
+                        border: 1px solid $orange;
+                        color: $orange;
+                    }
+                }
+
+                &:last-child{
+                    @include btn($green, $white, $green);
+                    &:hover{
+                        transition: $transition;
+                        background: none;
+                        border: 1px solid $green;
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}
