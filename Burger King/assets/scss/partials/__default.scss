@@ -1,0 +1,43 @@
+/*----------------------
+EXTERNAL FILES
+-----------------------*/
+@import '../variables.scss';
+@import '../mixins.scss';
+
+
+/*----------------------
+DEFAULT STYLES
+-----------------------*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-family: $fontFamily;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $headingsFont;
+    color: $gray;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        transition: $transition;
+    }
+}
+
+ul{
+    list-style-type: none;
+}
