@@ -1,0 +1,30 @@
+@mixin  flex ($justify, $align, $direction, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    
+}
+
+@mixin bgImage ($width, $height, $bg, $postion){
+    width: $width;
+    height: $height;
+    background-image: $bg;
+    background-position: $postition;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@mixin btn ($bg, $color, $border){
+    background-color: $bg;
+    color: $color;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border: none;
+    border: 1px solid $border;
+
+}
